@@ -342,7 +342,7 @@ int freceive(int enviou, int recebeu){
 
 
 			}
-			std::cout <<"[DELIVER] proposta \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta << "\" recebida do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
+			std::cout <<"[DELIVER] prepare request com numero \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
 			if(tam > N/2){
 				printf("[MAIORIA] O processo %d atingiu a maioria - recebeu %d accepts\n", ult_prepare[enviou].idorigem, tam);
 				cabou = 1;
@@ -354,7 +354,7 @@ int freceive(int enviou, int recebeu){
 			//se eh o maior numero recebido
 			//se passou pela etapa 3
 			if(contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size() >= N/2 && maiornumerorecebido[recebeu].first == nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta && passoupela3[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta] == 1){
-				std::cout <<"[DELIVER] proposta \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].valproposta << "\" recebida do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
+				std::cout <<"[DELIVER] accept request com numero \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_prepare[enviou].idorigem].valproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
 				printf("[DECIDE] processo %d decide pelo valor %d\n", recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].valproposta);
 				printf("O processo %d atualizou seu registrador\n", recebeu);
 
@@ -493,7 +493,7 @@ int freceive_acc(int enviou, int recebeu){
 
 
 			}
-			std::cout <<"[DELIVER] proposta \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" recebida do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
+			std::cout <<"[DELIVER] prepare request com numero \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
 			if(tam > N/2){
 				printf("[MAIORIA] O processo %d atingiu a maioria - recebeu %d accepts\n", ult_accept[enviou].idorigem, tam);
 				cabou = 1;
@@ -505,7 +505,7 @@ int freceive_acc(int enviou, int recebeu){
 			//se eh o maior numero recebido
 			//se passou pela etapa 3
 			if(contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size() >= N/2 && maiornumerorecebido[recebeu].first == nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta && passoupela3[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta] == 1){
-				std::cout <<"[DELIVER] proposta \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta << "\" recebida do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
+				std::cout <<"[DELIVER] accept request com numero \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
 				printf("[DECIDE] processo %d decide pelo valor %d\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta);
 				printf("O processo %d atualizou seu registrador\n", recebeu);
 
@@ -740,7 +740,7 @@ void print_end(int r, int n){
 	//apos o fim do tempo, printa os vetores states
 	printf("\n--------------------------------------------------------------\n");
 	printf("                       RESULTADOS\n");
-	printf("\nNúmero de rodadas total do programa: %d\n", r);
+	// printf("\nNúmero de rodadas total do programa: %d\n", r);
 	printf("\nVetor STATE ao final do diagnostico:\n");
 	print_state(nodo, n);
 }
@@ -1205,7 +1205,7 @@ int main(int argc, char const *argv[]) {
 				if(maiornumerorecebido[token].first <= nodo[token].last[token].numproposta)
 					maiornumerorecebido[token].first = nodo[token].last[token].numproposta;
 				//deliver(m)
-				std::cout <<"[DELIVER] proposta \"" << nodo[token].last[token].numproposta << "\" foi entregue para a aplicacao pelo processo " << token << "\n\n";
+				std::cout <<"[DELIVER] prepare request com numero \"" << nodo[token].last[token].numproposta << "\" foi entregue para a aplicacao pelo processo " << token << "\n\n";
 				//quando o processo entrega a mensagem para ele mesmo, tambem atualiza seu contador de accepts
 				//mas esse processo eh apenas para prepare request
 				if(nodo[token].last[token].type == 'P'){
@@ -1292,7 +1292,7 @@ int main(int argc, char const *argv[]) {
 				if(maiornumerorecebido[token].first <= nodo[token].last[token].numproposta)
 					maiornumerorecebido[token].first = nodo[token].last[token].numproposta;
 				//deliver(m)
-				std::cout <<"[DELIVER] proposta \"" << nodo[token].last[token].numproposta << "\" foi entregue para a aplicacao pelo processo " << token << "\n\n";
+				std::cout <<"[DELIVER] accept request com numero \"" << nodo[token].last[token].numproposta << "\" e valor \"" << nodo[token].last[token].valproposta << "\" foi entregue para a aplicacao pelo processo " << token << "\n\n";
 				//quando o processo entrega a mensagem para ele mesmo, tambem atualiza seu contador de accepts
 				//mas esse processo eh apenas para prepare request
 				if(nodo[token].last[token].type == 'P'){
@@ -1354,15 +1354,6 @@ int main(int argc, char const *argv[]) {
 
 	 	}
 	}
-
-
-	// for(int k = 0; k < quemrespondeu[token].size(); k++){
-	// 	if(quemrespondeu[token][k] == nodo[i].idr && status(nodo[quemrespondeu[token][k]].id) == 0 && nodo[quemrespondeu[token][k]].reg == 0){
-	// 		printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
-	// 		freceive(token, quemrespondeu[token][k]);
-	// 		break;
-	// 	}
-	// }
 	print_end(totalrodadas, N);
 
 	return 0;
