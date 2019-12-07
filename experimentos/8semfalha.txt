@@ -1,0 +1,75 @@
+===========================================================
+         Execucao do algoritmo Paxos + V-Cube
+         Aluna: Acacia dos Campos da Terra
+         Professor: Elias P. Duarte Jr.
+===========================================================
+
+Numero de nodos no sistema: 8
+[EVENTO] O processo 3 esta fazendo o propose! (tempo  50.0)
+
+[DELIVER] prepare request com numero "3" foi entregue para a aplicacao pelo processo 3
+
+[RBCAST] processo 3 envia mensagem para processo 7
+[DELIVER] prepare request com numero "3" recebido do nodo 3 foi entregue para a aplicacao pelo processo 7 no tempo {56}
+
+[RBCAST] processo 7 envia mensagem para processo 5
+[DELIVER] prepare request com numero "3" recebido do nodo 7 foi entregue para a aplicacao pelo processo 5 no tempo {56}
+
+[RBCAST] processo 5 envia mensagem para processo 4
+[DELIVER] prepare request com numero "3" recebido do nodo 5 foi entregue para a aplicacao pelo processo 4 no tempo {56}
+
+processo 4 envia para 3 a contagem de accepts
+--------------------------------------
+O processo 3 recebeu do processo 4 o prepare response (numero 3, valor 0)
+>>> A contagem de accepts esta em: 4
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 6
+[DELIVER] prepare request com numero "3" recebido do nodo 7 foi entregue para a aplicacao pelo processo 6 no tempo {56}
+
+[MAIORIA] O processo 3 atingiu a maioria - recebeu 5 accepts
+processo 6 envia para 3 a contagem de accepts
+--------------------------------------
+O processo 3 recebeu do processo 6 o prepare response (numero 3, valor 0)
+>>> A contagem de accepts esta em: 5
+--------------------------------------
+[DELIVER] accept request com numero "3" e valor "115" foi entregue para a aplicacao pelo processo 3
+
+[RBCAST] processo 3 envia mensagem para processo 7
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 3 foi entregue para a aplicacao pelo processo 7 no tempo {76}
+
+[DECIDE] processo 7 decide pelo valor 115 e envia o accept response para 3
+O processo 7 atualizou seu registrador
+O processo atualiza o registrador do nodo: 0
+O processo atualiza o registrador do nodo: 1
+O processo atualiza o registrador do nodo: 2
+O processo atualiza o registrador do nodo: 3
+O processo atualiza o registrador do nodo: 4
+O processo atualiza o registrador do nodo: 5
+O processo atualiza o registrador do nodo: 6
+
+--------------------------------------------------------------
+                       RESULTADOS
+
+Quantidade de prepare request enviados: 4
+
+Quantidade de prepare response recebidos: 2
+
+Quantidade de accept request enviados: 1
+
+Quantidade de accept response recebidos: 1
+
+Quantidade total de mensagens enviadas: 8
+
+Vetor STATE ao final do diagnostico:
+
+Vetor STATE(i): 0  1  2  3  4  5  6  7  
+-------------------------------------
+>     Nodo 0 |  0  0  0  0  0  0  0  0 
+>     Nodo 1 |  0  0  0  0  0  0  0  0 
+>     Nodo 2 |  0  0  0  0  0  0  0  0 
+>     Nodo 3 |  0  0  0  0  0  0  0  0 
+>     Nodo 4 |  0  0  0  0  0  0  0  0 
+>     Nodo 5 |  0  0  0  0  0  0  0  0 
+>     Nodo 6 |  0  0  0  0  0  0  0  0 
+>     Nodo 7 |  0  0  0  0  0  0  0  0 
+

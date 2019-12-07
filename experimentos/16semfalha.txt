@@ -1,0 +1,113 @@
+===========================================================
+         Execucao do algoritmo Paxos + V-Cube
+         Aluna: Acacia dos Campos da Terra
+         Professor: Elias P. Duarte Jr.
+===========================================================
+
+Numero de nodos no sistema: 16
+[EVENTO] O processo 7 esta fazendo o propose! (tempo  50.0)
+
+[DELIVER] prepare request com numero "7" foi entregue para a aplicacao pelo processo 7
+
+[RBCAST] processo 7 envia mensagem para processo 15
+[DELIVER] prepare request com numero "7" recebido do nodo 7 foi entregue para a aplicacao pelo processo 15 no tempo {56}
+
+[RBCAST] processo 15 envia mensagem para processo 11
+[DELIVER] prepare request com numero "7" recebido do nodo 15 foi entregue para a aplicacao pelo processo 11 no tempo {56}
+
+[RBCAST] processo 11 envia mensagem para processo 9
+[DELIVER] prepare request com numero "7" recebido do nodo 11 foi entregue para a aplicacao pelo processo 9 no tempo {56}
+
+[RBCAST] processo 9 envia mensagem para processo 8
+[DELIVER] prepare request com numero "7" recebido do nodo 9 foi entregue para a aplicacao pelo processo 8 no tempo {56}
+
+processo 8 envia para 7 a contagem de accepts
+--------------------------------------
+O processo 7 recebeu do processo 8 o prepare response (numero 7, valor 0)
+>>> A contagem de accepts esta em: 5
+--------------------------------------
+[RBCAST] processo 11 envia mensagem para processo 10
+[DELIVER] prepare request com numero "7" recebido do nodo 11 foi entregue para a aplicacao pelo processo 10 no tempo {56}
+
+processo 10 envia para 7 a contagem de accepts
+--------------------------------------
+O processo 7 recebeu do processo 10 o prepare response (numero 7, valor 0)
+>>> A contagem de accepts esta em: 6
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 13
+[DELIVER] prepare request com numero "7" recebido do nodo 15 foi entregue para a aplicacao pelo processo 13 no tempo {56}
+
+[RBCAST] processo 13 envia mensagem para processo 12
+[DELIVER] prepare request com numero "7" recebido do nodo 13 foi entregue para a aplicacao pelo processo 12 no tempo {56}
+
+processo 12 envia para 7 a contagem de accepts
+--------------------------------------
+O processo 7 recebeu do processo 12 o prepare response (numero 7, valor 0)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] prepare request com numero "7" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {56}
+
+[MAIORIA] O processo 7 atingiu a maioria - recebeu 9 accepts
+processo 14 envia para 7 a contagem de accepts
+--------------------------------------
+O processo 7 recebeu do processo 14 o prepare response (numero 7, valor 0)
+>>> A contagem de accepts esta em: 9
+--------------------------------------
+[DELIVER] accept request com numero "7" e valor "92" foi entregue para a aplicacao pelo processo 7
+
+[RBCAST] processo 7 envia mensagem para processo 15
+[DELIVER] accept request com numero "7" e valor "92" recebido do nodo 7 foi entregue para a aplicacao pelo processo 15 no tempo {76}
+
+[DECIDE] processo 15 decide pelo valor 92 e envia o accept response para 7
+O processo 15 atualizou seu registrador
+O processo atualiza o registrador do nodo: 0
+O processo atualiza o registrador do nodo: 1
+O processo atualiza o registrador do nodo: 2
+O processo atualiza o registrador do nodo: 3
+O processo atualiza o registrador do nodo: 4
+O processo atualiza o registrador do nodo: 5
+O processo atualiza o registrador do nodo: 6
+O processo atualiza o registrador do nodo: 7
+O processo atualiza o registrador do nodo: 8
+O processo atualiza o registrador do nodo: 9
+O processo atualiza o registrador do nodo: 10
+O processo atualiza o registrador do nodo: 11
+O processo atualiza o registrador do nodo: 12
+O processo atualiza o registrador do nodo: 13
+O processo atualiza o registrador do nodo: 14
+
+--------------------------------------------------------------
+                       RESULTADOS
+
+Quantidade de prepare request enviados: 8
+
+Quantidade de prepare response recebidos: 4
+
+Quantidade de accept request enviados: 1
+
+Quantidade de accept response recebidos: 1
+
+Quantidade total de mensagens enviadas: 14
+
+Vetor STATE ao final do diagnostico:
+
+Vetor STATE(i): 0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  
+-------------------------------------
+>     Nodo 0 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 1 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 2 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 3 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 4 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 5 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 6 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 7 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 8 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 9 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 10 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 11 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 12 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 13 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 14 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+>     Nodo 15 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0 
+
