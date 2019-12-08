@@ -1,0 +1,587 @@
+===========================================================
+         Execucao do algoritmo Paxos + V-Cube
+         Aluna: Acacia dos Campos da Terra
+         Professor: Elias P. Duarte Jr.
+===========================================================
+
+Numero de nodos no sistema: 128
+EVENTO: O nodo 127 falhou no tempo  40.0
+EVENTO: O nodo 126 falhou no tempo  40.0
+EVENTO: O nodo 125 falhou no tempo  40.0
+EVENTO: O nodo 124 falhou no tempo  40.0
+EVENTO: O nodo 123 falhou no tempo  40.0
+EVENTO: O nodo 122 falhou no tempo  40.0
+EVENTO: O nodo 121 falhou no tempo  40.0
+EVENTO: O nodo 120 falhou no tempo  40.0
+EVENTO: O nodo 119 falhou no tempo  40.0
+EVENTO: O nodo 118 falhou no tempo  40.0
+EVENTO: O nodo 117 falhou no tempo  40.0
+EVENTO: O nodo 116 falhou no tempo  40.0
+EVENTO: O nodo 115 falhou no tempo  40.0
+EVENTO: O nodo 114 falhou no tempo  40.0
+EVENTO: O nodo 113 falhou no tempo  40.0
+EVENTO: O nodo 112 falhou no tempo  40.0
+EVENTO: O nodo 111 falhou no tempo  40.0
+EVENTO: O nodo 110 falhou no tempo  40.0
+EVENTO: O nodo 109 falhou no tempo  40.0
+EVENTO: O nodo 108 falhou no tempo  40.0
+EVENTO: O nodo 107 falhou no tempo  40.0
+EVENTO: O nodo 106 falhou no tempo  40.0
+EVENTO: O nodo 105 falhou no tempo  40.0
+EVENTO: O nodo 104 falhou no tempo  40.0
+EVENTO: O nodo 103 falhou no tempo  40.0
+EVENTO: O nodo 102 falhou no tempo  40.0
+EVENTO: O nodo 101 falhou no tempo  40.0
+EVENTO: O nodo 100 falhou no tempo  40.0
+EVENTO: O nodo 99 falhou no tempo  40.0
+EVENTO: O nodo 98 falhou no tempo  40.0
+EVENTO: O nodo 97 falhou no tempo  40.0
+EVENTO: O nodo 96 falhou no tempo  40.0
+EVENTO: O nodo 95 falhou no tempo  40.0
+EVENTO: O nodo 94 falhou no tempo  40.0
+EVENTO: O nodo 93 falhou no tempo  40.0
+EVENTO: O nodo 92 falhou no tempo  40.0
+EVENTO: O nodo 91 falhou no tempo  40.0
+EVENTO: O nodo 90 falhou no tempo  40.0
+EVENTO: O nodo 89 falhou no tempo  40.0
+EVENTO: O nodo 88 falhou no tempo  40.0
+EVENTO: O nodo 87 falhou no tempo  40.0
+EVENTO: O nodo 86 falhou no tempo  40.0
+EVENTO: O nodo 85 falhou no tempo  40.0
+EVENTO: O nodo 84 falhou no tempo  40.0
+EVENTO: O nodo 83 falhou no tempo  40.0
+EVENTO: O nodo 82 falhou no tempo  40.0
+EVENTO: O nodo 81 falhou no tempo  40.0
+EVENTO: O nodo 80 falhou no tempo  40.0
+EVENTO: O nodo 79 falhou no tempo  40.0
+EVENTO: O nodo 78 falhou no tempo  40.0
+EVENTO: O nodo 77 falhou no tempo  40.0
+EVENTO: O nodo 76 falhou no tempo  40.0
+EVENTO: O nodo 75 falhou no tempo  40.0
+EVENTO: O nodo 74 falhou no tempo  40.0
+EVENTO: O nodo 73 falhou no tempo  40.0
+EVENTO: O nodo 72 falhou no tempo  40.0
+EVENTO: O nodo 71 falhou no tempo  40.0
+EVENTO: O nodo 70 falhou no tempo  40.0
+EVENTO: O nodo 69 falhou no tempo  40.0
+EVENTO: O nodo 68 falhou no tempo  40.0
+EVENTO: O nodo 67 falhou no tempo  40.0
+EVENTO: O nodo 66 falhou no tempo  40.0
+EVENTO: O nodo 65 falhou no tempo  40.0
+[EVENTO] O processo 63 esta fazendo o propose! (tempo  50.0)
+
+[DELIVER] prepare request com numero "63" foi entregue para a aplicacao pelo processo 63
+
+[RBCAST] processo 63 envia mensagem para processo 64
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 64 no tempo {56}
+
+processo 64 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 64 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 2
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 62
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 62 no tempo {56}
+
+processo 62 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 62 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 3
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 61
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 61 no tempo {56}
+
+[RBCAST] processo 61 envia mensagem para processo 60
+[DELIVER] prepare request com numero "63" recebido do nodo 61 foi entregue para a aplicacao pelo processo 60 no tempo {56}
+
+processo 60 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 60 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 5
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 59
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 59 no tempo {56}
+
+[RBCAST] processo 59 envia mensagem para processo 57
+[DELIVER] prepare request com numero "63" recebido do nodo 59 foi entregue para a aplicacao pelo processo 57 no tempo {56}
+
+[RBCAST] processo 57 envia mensagem para processo 56
+[DELIVER] prepare request com numero "63" recebido do nodo 57 foi entregue para a aplicacao pelo processo 56 no tempo {56}
+
+processo 56 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 56 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
+[RBCAST] processo 59 envia mensagem para processo 58
+[DELIVER] prepare request com numero "63" recebido do nodo 59 foi entregue para a aplicacao pelo processo 58 no tempo {56}
+
+processo 58 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 58 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 9
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 55
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 55 no tempo {56}
+
+[RBCAST] processo 55 envia mensagem para processo 51
+[DELIVER] prepare request com numero "63" recebido do nodo 55 foi entregue para a aplicacao pelo processo 51 no tempo {56}
+
+[RBCAST] processo 51 envia mensagem para processo 49
+[DELIVER] prepare request com numero "63" recebido do nodo 51 foi entregue para a aplicacao pelo processo 49 no tempo {56}
+
+[RBCAST] processo 49 envia mensagem para processo 48
+[DELIVER] prepare request com numero "63" recebido do nodo 49 foi entregue para a aplicacao pelo processo 48 no tempo {56}
+
+processo 48 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 48 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 13
+--------------------------------------
+[RBCAST] processo 51 envia mensagem para processo 50
+[DELIVER] prepare request com numero "63" recebido do nodo 51 foi entregue para a aplicacao pelo processo 50 no tempo {56}
+
+processo 50 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 50 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 14
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 53
+[DELIVER] prepare request com numero "63" recebido do nodo 55 foi entregue para a aplicacao pelo processo 53 no tempo {56}
+
+[RBCAST] processo 53 envia mensagem para processo 52
+[DELIVER] prepare request com numero "63" recebido do nodo 53 foi entregue para a aplicacao pelo processo 52 no tempo {56}
+
+processo 52 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 52 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 16
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 54
+[DELIVER] prepare request com numero "63" recebido do nodo 55 foi entregue para a aplicacao pelo processo 54 no tempo {56}
+
+processo 54 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 54 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 17
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 47
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 47 no tempo {56}
+
+[RBCAST] processo 47 envia mensagem para processo 39
+[DELIVER] prepare request com numero "63" recebido do nodo 47 foi entregue para a aplicacao pelo processo 39 no tempo {56}
+
+[RBCAST] processo 39 envia mensagem para processo 35
+[DELIVER] prepare request com numero "63" recebido do nodo 39 foi entregue para a aplicacao pelo processo 35 no tempo {56}
+
+[RBCAST] processo 35 envia mensagem para processo 33
+[DELIVER] prepare request com numero "63" recebido do nodo 35 foi entregue para a aplicacao pelo processo 33 no tempo {56}
+
+[RBCAST] processo 33 envia mensagem para processo 32
+[DELIVER] prepare request com numero "63" recebido do nodo 33 foi entregue para a aplicacao pelo processo 32 no tempo {56}
+
+processo 32 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 32 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 22
+--------------------------------------
+[RBCAST] processo 35 envia mensagem para processo 34
+[DELIVER] prepare request com numero "63" recebido do nodo 35 foi entregue para a aplicacao pelo processo 34 no tempo {56}
+
+processo 34 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 34 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 23
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 37
+[DELIVER] prepare request com numero "63" recebido do nodo 39 foi entregue para a aplicacao pelo processo 37 no tempo {56}
+
+[RBCAST] processo 37 envia mensagem para processo 36
+[DELIVER] prepare request com numero "63" recebido do nodo 37 foi entregue para a aplicacao pelo processo 36 no tempo {56}
+
+processo 36 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 36 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 25
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 38
+[DELIVER] prepare request com numero "63" recebido do nodo 39 foi entregue para a aplicacao pelo processo 38 no tempo {56}
+
+processo 38 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 38 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 26
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 43
+[DELIVER] prepare request com numero "63" recebido do nodo 47 foi entregue para a aplicacao pelo processo 43 no tempo {56}
+
+[RBCAST] processo 43 envia mensagem para processo 41
+[DELIVER] prepare request com numero "63" recebido do nodo 43 foi entregue para a aplicacao pelo processo 41 no tempo {56}
+
+[RBCAST] processo 41 envia mensagem para processo 40
+[DELIVER] prepare request com numero "63" recebido do nodo 41 foi entregue para a aplicacao pelo processo 40 no tempo {56}
+
+processo 40 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 40 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 29
+--------------------------------------
+[RBCAST] processo 43 envia mensagem para processo 42
+[DELIVER] prepare request com numero "63" recebido do nodo 43 foi entregue para a aplicacao pelo processo 42 no tempo {56}
+
+processo 42 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 42 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 30
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 45
+[DELIVER] prepare request com numero "63" recebido do nodo 47 foi entregue para a aplicacao pelo processo 45 no tempo {56}
+
+[RBCAST] processo 45 envia mensagem para processo 44
+[DELIVER] prepare request com numero "63" recebido do nodo 45 foi entregue para a aplicacao pelo processo 44 no tempo {56}
+
+processo 44 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 44 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 32
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 46
+[DELIVER] prepare request com numero "63" recebido do nodo 47 foi entregue para a aplicacao pelo processo 46 no tempo {56}
+
+processo 46 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 46 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 33
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 31
+[DELIVER] prepare request com numero "63" recebido do nodo 63 foi entregue para a aplicacao pelo processo 31 no tempo {56}
+
+[RBCAST] processo 31 envia mensagem para processo 15
+[DELIVER] prepare request com numero "63" recebido do nodo 31 foi entregue para a aplicacao pelo processo 15 no tempo {56}
+
+[RBCAST] processo 15 envia mensagem para processo 7
+[DELIVER] prepare request com numero "63" recebido do nodo 15 foi entregue para a aplicacao pelo processo 7 no tempo {56}
+
+[RBCAST] processo 7 envia mensagem para processo 3
+[DELIVER] prepare request com numero "63" recebido do nodo 7 foi entregue para a aplicacao pelo processo 3 no tempo {56}
+
+[RBCAST] processo 3 envia mensagem para processo 1
+[DELIVER] prepare request com numero "63" recebido do nodo 3 foi entregue para a aplicacao pelo processo 1 no tempo {56}
+
+[RBCAST] processo 1 envia mensagem para processo 0
+[DELIVER] prepare request com numero "63" recebido do nodo 1 foi entregue para a aplicacao pelo processo 0 no tempo {56}
+
+processo 0 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 0 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 39
+--------------------------------------
+[RBCAST] processo 3 envia mensagem para processo 2
+[DELIVER] prepare request com numero "63" recebido do nodo 3 foi entregue para a aplicacao pelo processo 2 no tempo {56}
+
+processo 2 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 2 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 40
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 5
+[DELIVER] prepare request com numero "63" recebido do nodo 7 foi entregue para a aplicacao pelo processo 5 no tempo {56}
+
+[RBCAST] processo 5 envia mensagem para processo 4
+[DELIVER] prepare request com numero "63" recebido do nodo 5 foi entregue para a aplicacao pelo processo 4 no tempo {56}
+
+processo 4 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 4 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 42
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 6
+[DELIVER] prepare request com numero "63" recebido do nodo 7 foi entregue para a aplicacao pelo processo 6 no tempo {56}
+
+processo 6 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 6 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 43
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 11
+[DELIVER] prepare request com numero "63" recebido do nodo 15 foi entregue para a aplicacao pelo processo 11 no tempo {56}
+
+[RBCAST] processo 11 envia mensagem para processo 9
+[DELIVER] prepare request com numero "63" recebido do nodo 11 foi entregue para a aplicacao pelo processo 9 no tempo {56}
+
+[RBCAST] processo 9 envia mensagem para processo 8
+[DELIVER] prepare request com numero "63" recebido do nodo 9 foi entregue para a aplicacao pelo processo 8 no tempo {56}
+
+processo 8 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 8 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 46
+--------------------------------------
+[RBCAST] processo 11 envia mensagem para processo 10
+[DELIVER] prepare request com numero "63" recebido do nodo 11 foi entregue para a aplicacao pelo processo 10 no tempo {56}
+
+processo 10 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 10 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 47
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 13
+[DELIVER] prepare request com numero "63" recebido do nodo 15 foi entregue para a aplicacao pelo processo 13 no tempo {56}
+
+[RBCAST] processo 13 envia mensagem para processo 12
+[DELIVER] prepare request com numero "63" recebido do nodo 13 foi entregue para a aplicacao pelo processo 12 no tempo {56}
+
+processo 12 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 12 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 49
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] prepare request com numero "63" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {56}
+
+processo 14 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 14 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 50
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 23
+[DELIVER] prepare request com numero "63" recebido do nodo 31 foi entregue para a aplicacao pelo processo 23 no tempo {56}
+
+[RBCAST] processo 23 envia mensagem para processo 19
+[DELIVER] prepare request com numero "63" recebido do nodo 23 foi entregue para a aplicacao pelo processo 19 no tempo {56}
+
+[RBCAST] processo 19 envia mensagem para processo 17
+[DELIVER] prepare request com numero "63" recebido do nodo 19 foi entregue para a aplicacao pelo processo 17 no tempo {56}
+
+[RBCAST] processo 17 envia mensagem para processo 16
+[DELIVER] prepare request com numero "63" recebido do nodo 17 foi entregue para a aplicacao pelo processo 16 no tempo {56}
+
+processo 16 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 16 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 54
+--------------------------------------
+[RBCAST] processo 19 envia mensagem para processo 18
+[DELIVER] prepare request com numero "63" recebido do nodo 19 foi entregue para a aplicacao pelo processo 18 no tempo {56}
+
+processo 18 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 18 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 55
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 21
+[DELIVER] prepare request com numero "63" recebido do nodo 23 foi entregue para a aplicacao pelo processo 21 no tempo {56}
+
+[RBCAST] processo 21 envia mensagem para processo 20
+[DELIVER] prepare request com numero "63" recebido do nodo 21 foi entregue para a aplicacao pelo processo 20 no tempo {56}
+
+processo 20 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 20 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 57
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 22
+[DELIVER] prepare request com numero "63" recebido do nodo 23 foi entregue para a aplicacao pelo processo 22 no tempo {56}
+
+processo 22 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 22 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 58
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 27
+[DELIVER] prepare request com numero "63" recebido do nodo 31 foi entregue para a aplicacao pelo processo 27 no tempo {56}
+
+[RBCAST] processo 27 envia mensagem para processo 25
+[DELIVER] prepare request com numero "63" recebido do nodo 27 foi entregue para a aplicacao pelo processo 25 no tempo {56}
+
+[RBCAST] processo 25 envia mensagem para processo 24
+[DELIVER] prepare request com numero "63" recebido do nodo 25 foi entregue para a aplicacao pelo processo 24 no tempo {56}
+
+processo 24 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 24 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 61
+--------------------------------------
+[RBCAST] processo 27 envia mensagem para processo 26
+[DELIVER] prepare request com numero "63" recebido do nodo 27 foi entregue para a aplicacao pelo processo 26 no tempo {56}
+
+processo 26 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 26 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 62
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 29
+[DELIVER] prepare request com numero "63" recebido do nodo 31 foi entregue para a aplicacao pelo processo 29 no tempo {56}
+
+[RBCAST] processo 29 envia mensagem para processo 28
+[DELIVER] prepare request com numero "63" recebido do nodo 29 foi entregue para a aplicacao pelo processo 28 no tempo {56}
+
+processo 28 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 28 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 64
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 30
+[DELIVER] prepare request com numero "63" recebido do nodo 31 foi entregue para a aplicacao pelo processo 30 no tempo {56}
+
+[MAIORIA] O processo 63 atingiu a maioria - recebeu 65 accepts
+processo 30 envia para 63 a contagem de accepts
+--------------------------------------
+O processo 63 recebeu do processo 30 o prepare response (numero 63, valor 0)
+>>> A contagem de accepts esta em: 65
+--------------------------------------
+[DELIVER] accept request com numero "63" e valor "127" foi entregue para a aplicacao pelo processo 63
+
+[RBCAST] processo 63 envia mensagem para processo 64
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 64 no tempo {76}
+
+[DECIDE] processo 64 decide pelo valor 127 e envia o accept response para 63
+O processo 64 atualizou seu registrador
+O processo atualiza o registrador do nodo: 0
+O processo atualiza o registrador do nodo: 1
+O processo atualiza o registrador do nodo: 2
+O processo atualiza o registrador do nodo: 3
+O processo atualiza o registrador do nodo: 4
+O processo atualiza o registrador do nodo: 5
+O processo atualiza o registrador do nodo: 6
+O processo atualiza o registrador do nodo: 7
+O processo atualiza o registrador do nodo: 8
+O processo atualiza o registrador do nodo: 9
+O processo atualiza o registrador do nodo: 10
+O processo atualiza o registrador do nodo: 11
+O processo atualiza o registrador do nodo: 12
+O processo atualiza o registrador do nodo: 13
+O processo atualiza o registrador do nodo: 14
+O processo atualiza o registrador do nodo: 15
+O processo atualiza o registrador do nodo: 16
+O processo atualiza o registrador do nodo: 17
+O processo atualiza o registrador do nodo: 18
+O processo atualiza o registrador do nodo: 19
+O processo atualiza o registrador do nodo: 20
+O processo atualiza o registrador do nodo: 21
+O processo atualiza o registrador do nodo: 22
+O processo atualiza o registrador do nodo: 23
+O processo atualiza o registrador do nodo: 24
+O processo atualiza o registrador do nodo: 25
+O processo atualiza o registrador do nodo: 26
+O processo atualiza o registrador do nodo: 27
+O processo atualiza o registrador do nodo: 28
+O processo atualiza o registrador do nodo: 29
+O processo atualiza o registrador do nodo: 30
+O processo atualiza o registrador do nodo: 31
+O processo atualiza o registrador do nodo: 32
+O processo atualiza o registrador do nodo: 33
+O processo atualiza o registrador do nodo: 34
+O processo atualiza o registrador do nodo: 35
+O processo atualiza o registrador do nodo: 36
+O processo atualiza o registrador do nodo: 37
+O processo atualiza o registrador do nodo: 38
+O processo atualiza o registrador do nodo: 39
+O processo atualiza o registrador do nodo: 40
+O processo atualiza o registrador do nodo: 41
+O processo atualiza o registrador do nodo: 42
+O processo atualiza o registrador do nodo: 43
+O processo atualiza o registrador do nodo: 44
+O processo atualiza o registrador do nodo: 45
+O processo atualiza o registrador do nodo: 46
+O processo atualiza o registrador do nodo: 47
+O processo atualiza o registrador do nodo: 48
+O processo atualiza o registrador do nodo: 49
+O processo atualiza o registrador do nodo: 50
+O processo atualiza o registrador do nodo: 51
+O processo atualiza o registrador do nodo: 52
+O processo atualiza o registrador do nodo: 53
+O processo atualiza o registrador do nodo: 54
+O processo atualiza o registrador do nodo: 55
+O processo atualiza o registrador do nodo: 56
+O processo atualiza o registrador do nodo: 57
+O processo atualiza o registrador do nodo: 58
+O processo atualiza o registrador do nodo: 59
+O processo atualiza o registrador do nodo: 60
+O processo atualiza o registrador do nodo: 61
+O processo atualiza o registrador do nodo: 62
+O processo atualiza o registrador do nodo: 63
+
+--------------------------------------------------------------
+                       RESULTADOS
+
+Quantidade de prepare request enviados: 64
+
+Quantidade de prepare response recebidos: 33
+
+Quantidade de accept request enviados: 1
+
+Quantidade de accept response recebidos: 1
+
+Quantidade total de mensagens enviadas: 99
+
+Vetor STATE ao final do diagnostico:
+
+Vetor STATE(i): 0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  
+-------------------------------------
+>     Nodo 0 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 1 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 2 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 3 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 4 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 5 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 6 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 7 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 8 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 9 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 10 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 11 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 12 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 13 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 14 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 15 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 16 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 17 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 18 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 19 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 20 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 21 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 22 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 23 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 24 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 25 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 26 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 27 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 28 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 29 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 30 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 31 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 32 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 33 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 34 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 35 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 36 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 37 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 38 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 39 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 40 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 41 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 42 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 43 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 44 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 45 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 46 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 47 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 48 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 49 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 50 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 51 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 52 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 53 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 54 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 55 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 56 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 57 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 58 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 59 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 60 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 61 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 62 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 63 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+>     Nodo 64 |  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+

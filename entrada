@@ -1,2 +1,5 @@
-1024
-propose 50.0 511
+8
+fault 40.0 5
+fault 40.0 6
+fault 40.0 7
+propose 50.0 3
