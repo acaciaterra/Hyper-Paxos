@@ -1,0 +1,268 @@
+===========================================================
+         Execucao do algoritmo Paxos + V-Cube
+         Aluna: Acacia dos Campos da Terra
+         Professor: Elias P. Duarte Jr.
+===========================================================
+
+Numero de nodos no sistema: 32
+EVENTO: O nodo 31 falhou no tempo  40.0
+EVENTO: O nodo 29 falhou no tempo  40.0
+EVENTO: O nodo 27 falhou no tempo  40.0
+EVENTO: O nodo 25 falhou no tempo  40.0
+EVENTO: O nodo 23 falhou no tempo  40.0
+EVENTO: O nodo 21 falhou no tempo  40.0
+EVENTO: O nodo 19 falhou no tempo  40.0
+EVENTO: O nodo 17 falhou no tempo  40.0
+EVENTO: O nodo 13 falhou no tempo  40.0
+EVENTO: O nodo 11 falhou no tempo  40.0
+EVENTO: O nodo 9 falhou no tempo  40.0
+EVENTO: O nodo 7 falhou no tempo  40.0
+EVENTO: O nodo 5 falhou no tempo  40.0
+EVENTO: O nodo 3 falhou no tempo  40.0
+EVENTO: O nodo 1 falhou no tempo  40.0
+[EVENTO] O processo 15 esta fazendo o propose! (tempo  50.0)
+
+[DELIVER] prepare request com numero "15" foi entregue para a aplicacao pelo processo 15
+
+[RBCAST] processo 15 envia mensagem para processo 30
+[DELIVER] prepare request com numero "15" recebido do nodo 15 foi entregue para a aplicacao pelo processo 30 no tempo {56}
+
+[RBCAST] processo 30 envia mensagem para processo 22
+[DELIVER] prepare request com numero "15" recebido do nodo 30 foi entregue para a aplicacao pelo processo 22 no tempo {56}
+
+[RBCAST] processo 22 envia mensagem para processo 18
+[DELIVER] prepare request com numero "15" recebido do nodo 22 foi entregue para a aplicacao pelo processo 18 no tempo {56}
+
+[RBCAST] processo 18 envia mensagem para processo 16
+[DELIVER] prepare request com numero "15" recebido do nodo 18 foi entregue para a aplicacao pelo processo 16 no tempo {56}
+
+processo 16 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 16 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 5
+--------------------------------------
+[RBCAST] processo 22 envia mensagem para processo 20
+[DELIVER] prepare request com numero "15" recebido do nodo 22 foi entregue para a aplicacao pelo processo 20 no tempo {56}
+
+processo 20 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 20 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 6
+--------------------------------------
+[RBCAST] processo 30 envia mensagem para processo 26
+[DELIVER] prepare request com numero "15" recebido do nodo 30 foi entregue para a aplicacao pelo processo 26 no tempo {56}
+
+[RBCAST] processo 26 envia mensagem para processo 24
+[DELIVER] prepare request com numero "15" recebido do nodo 26 foi entregue para a aplicacao pelo processo 24 no tempo {56}
+
+processo 24 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 24 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
+[RBCAST] processo 30 envia mensagem para processo 28
+[DELIVER] prepare request com numero "15" recebido do nodo 30 foi entregue para a aplicacao pelo processo 28 no tempo {56}
+
+processo 28 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 28 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 9
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] prepare request com numero "15" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {56}
+
+processo 14 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 14 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 10
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 12
+[DELIVER] prepare request com numero "15" recebido do nodo 15 foi entregue para a aplicacao pelo processo 12 no tempo {56}
+
+processo 12 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 12 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 11
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 10
+[DELIVER] prepare request com numero "15" recebido do nodo 15 foi entregue para a aplicacao pelo processo 10 no tempo {56}
+
+[RBCAST] processo 10 envia mensagem para processo 8
+[DELIVER] prepare request com numero "15" recebido do nodo 10 foi entregue para a aplicacao pelo processo 8 no tempo {56}
+
+processo 8 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 8 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 13
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 6
+[DELIVER] prepare request com numero "15" recebido do nodo 15 foi entregue para a aplicacao pelo processo 6 no tempo {56}
+
+[RBCAST] processo 6 envia mensagem para processo 2
+[DELIVER] prepare request com numero "15" recebido do nodo 6 foi entregue para a aplicacao pelo processo 2 no tempo {56}
+
+[RBCAST] processo 2 envia mensagem para processo 0
+[DELIVER] prepare request com numero "15" recebido do nodo 2 foi entregue para a aplicacao pelo processo 0 no tempo {56}
+
+processo 0 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 0 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 16
+--------------------------------------
+[RBCAST] processo 6 envia mensagem para processo 4
+[DELIVER] prepare request com numero "15" recebido do nodo 6 foi entregue para a aplicacao pelo processo 4 no tempo {56}
+
+[MAIORIA] O processo 15 atingiu a maioria - recebeu 17 accepts
+processo 4 envia para 15 a contagem de accepts
+--------------------------------------
+O processo 15 recebeu do processo 4 o prepare response (numero 15, valor 0)
+>>> A contagem de accepts esta em: 17
+--------------------------------------
+[DELIVER] accept request com numero "15" e valor "126" foi entregue para a aplicacao pelo processo 15
+
+O processo 15 decidiu pelo valor 126 e atualizou seu registrador 
+[RBCAST] processo 15 envia mensagem para processo 6
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 15 foi entregue para a aplicacao pelo processo 6 no tempo {76}
+
+[DECIDE] processo 6 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 6 envia mensagem para processo 2
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 6 foi entregue para a aplicacao pelo processo 2 no tempo {76}
+
+[DECIDE] processo 2 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 2 envia mensagem para processo 0
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 2 foi entregue para a aplicacao pelo processo 0 no tempo {76}
+
+[DECIDE] processo 0 decide pelo valor 126 e atualiza seu registrador
+processo 0 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 0 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 4
+--------------------------------------
+[RBCAST] processo 6 envia mensagem para processo 4
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 6 foi entregue para a aplicacao pelo processo 4 no tempo {76}
+
+[DECIDE] processo 4 decide pelo valor 126 e atualiza seu registrador
+processo 4 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 4 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 5
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 10
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 15 foi entregue para a aplicacao pelo processo 10 no tempo {76}
+
+[DECIDE] processo 10 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 10 envia mensagem para processo 8
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 10 foi entregue para a aplicacao pelo processo 8 no tempo {76}
+
+[DECIDE] processo 8 decide pelo valor 126 e atualiza seu registrador
+processo 8 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 8 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 7
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 12
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 15 foi entregue para a aplicacao pelo processo 12 no tempo {76}
+
+[DECIDE] processo 12 decide pelo valor 126 e atualiza seu registrador
+processo 12 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 12 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {76}
+
+[DECIDE] processo 14 decide pelo valor 126 e atualiza seu registrador
+processo 14 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 14 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 9
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 30
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 15 foi entregue para a aplicacao pelo processo 30 no tempo {76}
+
+[DECIDE] processo 30 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 30 envia mensagem para processo 22
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 30 foi entregue para a aplicacao pelo processo 22 no tempo {76}
+
+[DECIDE] processo 22 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 22 envia mensagem para processo 18
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 22 foi entregue para a aplicacao pelo processo 18 no tempo {76}
+
+[DECIDE] processo 18 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 18 envia mensagem para processo 16
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 18 foi entregue para a aplicacao pelo processo 16 no tempo {76}
+
+[DECIDE] processo 16 decide pelo valor 126 e atualiza seu registrador
+processo 16 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 16 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 13
+--------------------------------------
+[RBCAST] processo 22 envia mensagem para processo 20
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 22 foi entregue para a aplicacao pelo processo 20 no tempo {76}
+
+[DECIDE] processo 20 decide pelo valor 126 e atualiza seu registrador
+processo 20 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 20 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 14
+--------------------------------------
+[RBCAST] processo 30 envia mensagem para processo 26
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 30 foi entregue para a aplicacao pelo processo 26 no tempo {76}
+
+[DECIDE] processo 26 decide pelo valor 126 e atualiza seu registrador
+[RBCAST] processo 26 envia mensagem para processo 24
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 26 foi entregue para a aplicacao pelo processo 24 no tempo {76}
+
+[DECIDE] processo 24 decide pelo valor 126 e atualiza seu registrador
+processo 24 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 24 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 16
+--------------------------------------
+[RBCAST] processo 30 envia mensagem para processo 28
+[DELIVER] accept request com numero "15" e valor "126" recebido do nodo 30 foi entregue para a aplicacao pelo processo 28 no tempo {76}
+
+[DECIDE] processo 28 decide pelo valor 126 e atualiza seu registrador
+processo 28 envia para 15 a decisao
+--------------------------------------
+O processo 15 recebeu do processo 28 o accept response (numero 15, valor 126)
+>>> A contagem de accepts esta em: 17
+--------------------------------------
+
+--------------------------------------------------------------
+                       RESULTADOS
+
+Quantidade de prepare request enviados: 16
+
+Quantidade de prepare response recebidos: 9
+
+Quantidade de accept request enviados: 16
+
+Quantidade de accept response recebidos: 9
+
+Quantidade total de mensagens enviadas: 50
+
+Vetor STATE ao final do diagnostico:
+
+Vetor STATE(i): 0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  
+-------------------------------------
+>     Nodo 0 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 2 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 4 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 6 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 8 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 10 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 12 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 14 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 15 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 16 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 18 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 20 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 22 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 24 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 26 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 28 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+>     Nodo 30 |  0  1  0  1  0  1  0  1  0   1   0   1   0   1   0   0   0   1   0   1   0   1   0   1   0   1   0   1   0   1   0   1 
+

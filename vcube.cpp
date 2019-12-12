@@ -97,6 +97,8 @@ std:: vector<int> numeros;
 std:: vector<int> passoupela3;
 //contresp eh responsavel por armazenar quem respondeu ao prepare request
 std:: vector<std:: vector<int>> contresp;
+//contresp2 armazena para a fase 2 - accept responses
+std:: vector<std:: vector<int>> contresp2;
 int enviados = 0;
 int npropostaatual = 0;
 //-------------- paxos
@@ -236,20 +238,22 @@ testsvector* testes(int n, int s, std:: vector<tnodo> &nodo) {
 /*---------------inicio funcoes paxos-----------------*/
 // o processo proposer recebe a resposta do acceptor contendo o numero da maior proposta
 // recebida e tambem o valor (se for 0, é NULL, significa que ainda nao aceitou a proposta)
-void send_prepareresponse(int acceptor, int proposer, int nproposta, int vproposta, int pos){
-	printf("--------------------------------------\n");
-    printf("O processo %d recebeu do processo %d o prepare response (numero %d, valor %d)\n",
-    proposer, acceptor, nproposta, vproposta);
-	printf(">>> A contagem de accepts esta em: %d\n", contresp[nproposta].size());
-	printf("--------------------------------------\n");
-    // aqui o proposer comeca a execucao da fase 2 do algoritmo
-    // o proposer deve verificar se recebeu a resposta de uma maioria de acceptors
-    // printf("\n----------------------------------------\n");
-	// printf("numeor proposta: %d\n", nproposta);
-    // printf("recebeu %d accepts\n", contresp[nproposta].size());
-    // // printf("prepare request enviados: %d\n", respostas[proposer][pos].first);
-    // // printf("prepare response recebidos: %d\n", respostas[proposer][pos].second);
-    // printf("----------------------------------------\n\n");
+void send_prepareresponse(int acceptor, int proposer, int nproposta, int vproposta, int pos, int flag){
+	if(flag ==1){
+		msg2++;
+		printf("--------------------------------------\n");
+		printf("O processo %d recebeu do processo %d o prepare response (numero %d, valor %d)\n",
+		proposer, acceptor, nproposta, vproposta);
+		printf(">>> A contagem de accepts esta em: %d\n", contresp[nproposta].size());
+		printf("--------------------------------------\n");
+	}else{
+		msg4++;
+		printf("--------------------------------------\n");
+		printf("O processo %d recebeu do processo %d o accept response (numero %d, valor %d)\n",
+		proposer, acceptor, nproposta, vproposta);
+		printf(">>> A contagem de accepts esta em: %d\n", contresp2[nproposta].size());
+		printf("--------------------------------------\n");
+	}
 }
 
 // essa funcao representa o processo acceptor na fase 1 do algoritmo
@@ -429,25 +433,14 @@ int freceive(int enviou, int recebeu){
 		//se o processo eh folha, precisa enviar para a origem a contagem de accepts
 		// printf("##### %d nao envia mais msg\n", recebeu);
 		printf("processo %d envia para %d a contagem de accepts\n", recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1);
-		msg2++;
-		// respostas[token].size()-1
-		// send_prepareresponse(i, token, maiornumerorecebido[i].first, maiornumerorecebido[i].second, pos)
-		// for(int i  = 0; i < contresp[nodo[recebeu].last[ultima_msg->idorigem].numproposta].size(); i++)
-		// 	printf("> %d", contresp[nodo[recebeu].last[ultima_msg->idorigem].numproposta][i]);
-		// printf("\n");
+		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1, 1);
 		return -1;
 	} else if (nodo[recebeu].last[ult_prepare[enviou].idorigem].type == 'R' && enviamsg == 0){
 		printf("processo %d envia para %d a decisao\n", recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1);
-		msg2++;
+		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1, 1);
 	}else if (enviamsg == 0){
 		printf("processo %d envia para %d a contagem de accepts\n", recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1);
-		msg2++;
-		// for(int i  = 0; i < contresp[nodo[recebeu].last[ultima_msg->idorigem].numproposta].size(); i++)
-		// 	printf("> %d", contresp[nodo[recebeu].last[ultima_msg->idorigem].numproposta][i]);
-		// printf("\n");
+		send_prepareresponse(recebeu, nodo[recebeu].last[ult_prepare[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_prepare[enviou].idorigem].numproposta].size()-1, 1);
 	}
 
 	return 0;
@@ -455,14 +448,14 @@ int freceive(int enviou, int recebeu){
 
 
 int freceive_acc(int enviou, int recebeu){
-	int k, etp, enviamsg, tam, cabou, result;
+	int k, etp, enviamsg, tam;
 	bool res;
 	enviamsg = 0;
-	cabou = 0;
 	// printf("<----Ultimo nodo - chegou na receive: %d\n", enviou);
 	// printf("TYPE = %c\n", nodo[token].last[ultima_msg->idorigem].type);
 	// std::cout << "-----> schedule:" << ultima_msg->m << "\n";
 	// printf("ULTIMO NODO: %d TOKEN: %d\n", enviou, token);
+	// printf("------- %d %d\n", ult_accept[enviou].timestamp, nodo[recebeu].last[ult_accept[enviou].idorigem].timestamp);
 	if(nodo[recebeu].last[ult_accept[enviou].idorigem].type == 'N'
 	|| ult_accept[enviou].timestamp > nodo[recebeu].last[ult_accept[enviou].idorigem].timestamp){
 		//last_i[source(m)] <- m
@@ -482,46 +475,19 @@ int freceive_acc(int enviou, int recebeu){
 		ult_accept[recebeu].numproposta = ult_accept[enviou].numproposta;
 		ult_accept[recebeu].valproposta = ult_accept[enviou].valproposta;
 
-		if(nodo[recebeu].last[ult_accept[enviou].idorigem].type == 'P'){
-			contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].push_back(recebeu);
-			tam = contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size();
-			// printf("><><><><><><><><><><><><>< %d\n", contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta][tam-1]);
-			//deliver(m)
-			if(maiornumerorecebido[recebeu].first <= nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta){
-				maiornumerorecebido[recebeu].first = nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta;
-				npropostaatual = maiornumerorecebido[recebeu].first;
-			}
-			msg3++;
-			std::cout <<"[DELIVER] prepare request com numero \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
-			if(tam > N/2){
-				printf("[MAIORIA] O processo %d atingiu a maioria - recebeu %d accepts\n", ult_accept[enviou].idorigem, tam);
-				cabou = 1;
-			}
-		} else if(nodo[recebeu].last[ult_accept[enviou].idorigem].type == 'R'){
-			//deliver(m)
-			//verifica:
-			//maioria
-			//se eh o maior numero recebido
-			//se passou pela etapa 3
-			if(contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size() >= N/2 && maiornumerorecebido[recebeu].first == nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta && passoupela3[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta] == 1){
-				msg3++;
-				std::cout <<"[DELIVER] accept request com numero \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
-				printf("[DECIDE] processo %d decide pelo valor %d e envia o accept response para %d\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta, enviou);
-				msg4++;
-				printf("O processo %d atualizou seu registrador\n", recebeu);
+		contresp2[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].push_back(recebeu);
 
-				if(nodo[recebeu].reg == 0 && status(nodo[recebeu].id) == 0){
-					nodo[recebeu].reg = nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta;
-					for(int i = 0; i < N; i++){
-						if(nodo[i].reg == 0 && status(nodo[i].id) == 0){
-							printf("O processo atualiza o registrador do nodo: %d\n", i);
-							nodo[i].reg = nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta;
-						}
-					}
-					return 0;
-				}
-			}
+		if(maiornumerorecebido[recebeu].first <= nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta){
+			maiornumerorecebido[recebeu].first = nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta;
+			maiornumerorecebido[recebeu].second = nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta;
 		}
+		msg3++;
+		std::cout <<"[DELIVER] accept request com numero \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta << "\" e valor \"" << nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta << "\" recebido do nodo " << enviou <<" foi entregue para a aplicacao pelo processo " << recebeu << " no tempo {" << time() << "}\n\n";
+		if(nodo[recebeu].reg == 0 && status(nodo[recebeu].id) == 0){
+			printf("[DECIDE] processo %d decide pelo valor %d e atualiza seu registrador\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta);
+			nodo[recebeu].reg = nodo[recebeu].last[ult_accept[enviou].idorigem].valproposta;
+		}
+
 
 		// printf("Nodo: %d\n", nodo[ult_accept[enviou].idorigem].idr);
 		// printf("Status do nodo: %d\n", status(nodo[ultima_msg->idorigem].id));
@@ -531,7 +497,9 @@ int freceive_acc(int enviou, int recebeu){
 			// broadcast(*ultima_msg);
 			return 0;
 		}
+
 	}
+
 	// encontrar identificador do cluster s de i que contem j
 	// printf("****************** %d\n", tests[recebeu].size);
 	for(int c = 0; c < tests[recebeu].size; c++){
@@ -564,41 +532,21 @@ int freceive_acc(int enviou, int recebeu){
 						// printf("---------- ETP = %d e K = %d\n", etp, k);
 						nodo[recebeu].ack_set.insert(tset{enviou, nodo[i].idr, ult_accept[enviou]});
 						printf("[RBCAST] processo %d envia mensagem para processo %d\n", recebeu, nodo[i].idr);
-						result = freceive(recebeu, nodo[i].idr);
-						if(result == -1){
-							// printf("Chegou no return aqui\n");
-							return -1;
-						}
+						freceive_acc(recebeu, nodo[i].idr);
+						// if(result == -1){
+						// 	// printf("Chegou no return aqui\n");
+						// 	return -1;
+						// }
 					}
 				}
 			}
 		}
 	}
 	checkacks(nodo[enviou], ult_accept[enviou], 2);
-	if(enviamsg == 0 && cabou == 1){
-		//quando o processo nao envia mais mensagem para ninguem, eh porque eh folha
-		//se o processo eh folha, precisa enviar para a origem a contagem de accepts
-		// printf("##### %d nao envia mais msg\n", recebeu);
-		printf("processo %d envia para %d a contagem de accepts\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size()-1);
 
-		// respostas[token].size()-1
-		// send_prepareresponse(i, token, maiornumerorecebido[i].first, maiornumerorecebido[i].second, pos)
-		// for(int i  = 0; i < contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size(); i++)
-		// 	printf("> %d", contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta][i]);
-		// printf("\n");
-		return -1;
-	} else if (nodo[recebeu].last[ult_accept[enviou].idorigem].type == 'R' && enviamsg == 0){
+	if (enviamsg == 0){
 		printf("processo %d envia para %d a decisao\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size()-1);
-
-	}else if (enviamsg == 0){
-		printf("processo %d envia para %d a contagem de accepts\n", recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem);
-		send_prepareresponse(recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size()-1);
-
-		// for(int i  = 0; i < contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size(); i++)
-		// 	printf("> %d", contresp[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta][i]);
-		// printf("\n");
+		send_prepareresponse(recebeu, nodo[recebeu].last[ult_accept[enviou].idorigem].idorigem, maiornumerorecebido[recebeu].first, maiornumerorecebido[recebeu].second, contresp2[nodo[recebeu].last[ult_accept[enviou].idorigem].numproposta].size()-1, 2);
 	}
 
 	return 0;
@@ -798,6 +746,7 @@ int main(int argc, char const *argv[]) {
     maiornumerorecebido.resize(N);
     passoupela3.resize(1050);
 	contresp.resize(1050);//cada posicao representa uma proposta
+	contresp2.resize(1050);//cada posicao representa uma proposta - esse eh para a fase 2
 
 	//aqui foram inseridas 50 propostas de valores aleatorios
     //os numeros de propostas sao definidos de acordo com o processo
@@ -1278,8 +1227,6 @@ int main(int argc, char const *argv[]) {
 
 			case broadcast_acc:
 			//if source(m) == i
-			int result2;
-			result = 0;
 			if(ult_accept[token].idorigem == token && status(nodo[token].id) == 0){
 				//isso aqui não vai gerar look infinito não? HAHAHAHAHAHAHAHAHAH
 				while(resb){
@@ -1298,65 +1245,34 @@ int main(int argc, char const *argv[]) {
 				nodo[token].last[token].numproposta = ult_accept[token].numproposta;
 				nodo[token].last[token].valproposta = ult_accept[token].valproposta;
 
-				if(maiornumerorecebido[token].first <= nodo[token].last[token].numproposta)
+				if(maiornumerorecebido[token].first <= nodo[token].last[token].numproposta){
 					maiornumerorecebido[token].first = nodo[token].last[token].numproposta;
+					maiornumerorecebido[token].second = nodo[token].last[token].valproposta;
+				}
 				//deliver(m)
 				std::cout <<"[DELIVER] accept request com numero \"" << nodo[token].last[token].numproposta << "\" e valor \"" << nodo[token].last[token].valproposta << "\" foi entregue para a aplicacao pelo processo " << token << "\n\n";
 				// msg3++;
-				//quando o processo entrega a mensagem para ele mesmo, tambem atualiza seu contador de accepts
-				//mas esse processo eh apenas para prepare request
-				if(nodo[token].last[token].type == 'P'){
-					contresp[nodo[token].last[token].numproposta].push_back(token);
+				if(nodo[token].reg == 0){
+					nodo[token].reg = nodo[token].last[token].valproposta;
+					printf("O processo %d decidiu pelo valor %d e atualizou seu registrador \n", token, nodo[token].last[token].valproposta);
 				}
+
+				contresp2[nodo[token].last[token].numproposta].push_back(token);
 			}
 
 			//aqui: faco verificacao para enviar a mensagem apenas para quem respondeu o prepare request
 			//anteriormente. Isso deve ser feito apenas quando a mensagem emitida for do tipo R (accept request)
 
+
 			//enviar a todos os vizinhos corretos que pertencem ao cluster s
-			if(token < N/2){
-				for(int i = N - 1; i >= 0; i--){
-					for(int j = 0; j < tests[i].size; j++){
-						if(tests[i].vector[j] == token && nodo[i].papel[0] == 2){ //verificacao do vcube
-							if(nodo[token].last[token].type == 'R'){ //se for accept request
-								for(int k = 0; k < contresp[nodo[token].last[token].numproposta].size(); k++){
-									if(contresp[nodo[token].last[token].numproposta][k] == nodo[i].idr && status(nodo[contresp[nodo[token].last[token].numproposta][k]].id) == 0 && nodo[contresp[nodo[token].last[token].numproposta][k]].reg == 0){
-										printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
-										freceive_acc(token, contresp[nodo[token].last[token].numproposta][k]);
-										break;
-									}
-								}
-							} else if(nodo[token].last[token].type == 'P'){
-								printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
-								result2 = freceive_acc(token, nodo[i].idr);
-								break;
-							}
-						}
+			for(int i = 0; i < N; i ++){
+				for(int j = 0; j < tests[i].size; j++){
+					if(tests[i].vector[j] == token){
+						// printf("token: %d\n", token);
+						// printf("i: %d\n", i);
+						printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
+						freceive_acc(token, nodo[i].idr);
 					}
-					if(result2 == -1 && nodo[token].last[token].type == 'P')
-					break;
-				}
-			} else {
-				for(int i = 0; i < N; i++){
-					for(int j = 0; j < tests[i].size; j++){
-						if(tests[i].vector[j] == token && nodo[i].papel[0] == 2){ //verificacao do vcube
-							if(nodo[token].last[token].type == 'R'){ //se for accept request
-								for(int k = 0; k < contresp[nodo[token].last[token].numproposta].size(); k++){
-									if(contresp[nodo[token].last[token].numproposta][k] == nodo[i].idr && status(nodo[contresp[nodo[token].last[token].numproposta][k]].id) == 0 && nodo[contresp[nodo[token].last[token].numproposta][k]].reg == 0){
-										printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
-										freceive_acc(token, contresp[nodo[token].last[token].numproposta][k]);
-										break;
-									}
-								}
-							} else if(nodo[token].last[token].type == 'P'){
-								printf("[RBCAST] processo %d envia mensagem para processo %d\n", token, nodo[i].idr);
-								result2 = freceive_acc(token, nodo[i].idr);
-								break;
-							}
-						}
-					}
-					if(result2 == -1 && nodo[token].last[token].type == 'P')
-					break;
 				}
 			}
 

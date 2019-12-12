@@ -188,74 +188,419 @@ O processo 31 recebeu do processo 62 o prepare response (numero 31, valor 0)
 --------------------------------------
 [DELIVER] accept request com numero "31" e valor "2" foi entregue para a aplicacao pelo processo 31
 
+O processo 31 decidiu pelo valor 2 e atualizou seu registrador 
+[RBCAST] processo 31 envia mensagem para processo 15
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 15 no tempo {76}
+
+[DECIDE] processo 15 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 15 envia mensagem para processo 7
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 15 foi entregue para a aplicacao pelo processo 7 no tempo {76}
+
+[DECIDE] processo 7 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 7 envia mensagem para processo 3
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 7 foi entregue para a aplicacao pelo processo 3 no tempo {76}
+
+[DECIDE] processo 3 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 3 envia mensagem para processo 1
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 3 foi entregue para a aplicacao pelo processo 1 no tempo {76}
+
+[DECIDE] processo 1 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 1 envia mensagem para processo 0
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 1 foi entregue para a aplicacao pelo processo 0 no tempo {76}
+
+[DECIDE] processo 0 decide pelo valor 2 e atualiza seu registrador
+processo 0 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 0 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 6
+--------------------------------------
+[RBCAST] processo 3 envia mensagem para processo 2
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 3 foi entregue para a aplicacao pelo processo 2 no tempo {76}
+
+[DECIDE] processo 2 decide pelo valor 2 e atualiza seu registrador
+processo 2 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 2 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 7
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 5
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 7 foi entregue para a aplicacao pelo processo 5 no tempo {76}
+
+[DECIDE] processo 5 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 5 envia mensagem para processo 4
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 5 foi entregue para a aplicacao pelo processo 4 no tempo {76}
+
+[DECIDE] processo 4 decide pelo valor 2 e atualiza seu registrador
+processo 4 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 4 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 9
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 6
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 7 foi entregue para a aplicacao pelo processo 6 no tempo {76}
+
+[DECIDE] processo 6 decide pelo valor 2 e atualiza seu registrador
+processo 6 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 6 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 10
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 11
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 15 foi entregue para a aplicacao pelo processo 11 no tempo {76}
+
+[DECIDE] processo 11 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 11 envia mensagem para processo 9
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 11 foi entregue para a aplicacao pelo processo 9 no tempo {76}
+
+[DECIDE] processo 9 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 9 envia mensagem para processo 8
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 9 foi entregue para a aplicacao pelo processo 8 no tempo {76}
+
+[DECIDE] processo 8 decide pelo valor 2 e atualiza seu registrador
+processo 8 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 8 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 13
+--------------------------------------
+[RBCAST] processo 11 envia mensagem para processo 10
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 11 foi entregue para a aplicacao pelo processo 10 no tempo {76}
+
+[DECIDE] processo 10 decide pelo valor 2 e atualiza seu registrador
+processo 10 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 10 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 14
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 13
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 15 foi entregue para a aplicacao pelo processo 13 no tempo {76}
+
+[DECIDE] processo 13 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 13 envia mensagem para processo 12
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 13 foi entregue para a aplicacao pelo processo 12 no tempo {76}
+
+[DECIDE] processo 12 decide pelo valor 2 e atualiza seu registrador
+processo 12 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 12 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 16
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {76}
+
+[DECIDE] processo 14 decide pelo valor 2 e atualiza seu registrador
+processo 14 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 14 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 17
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 23
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 23 no tempo {76}
+
+[DECIDE] processo 23 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 23 envia mensagem para processo 19
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 23 foi entregue para a aplicacao pelo processo 19 no tempo {76}
+
+[DECIDE] processo 19 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 19 envia mensagem para processo 17
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 19 foi entregue para a aplicacao pelo processo 17 no tempo {76}
+
+[DECIDE] processo 17 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 17 envia mensagem para processo 16
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 17 foi entregue para a aplicacao pelo processo 16 no tempo {76}
+
+[DECIDE] processo 16 decide pelo valor 2 e atualiza seu registrador
+processo 16 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 16 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 21
+--------------------------------------
+[RBCAST] processo 19 envia mensagem para processo 18
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 19 foi entregue para a aplicacao pelo processo 18 no tempo {76}
+
+[DECIDE] processo 18 decide pelo valor 2 e atualiza seu registrador
+processo 18 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 18 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 22
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 21
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 23 foi entregue para a aplicacao pelo processo 21 no tempo {76}
+
+[DECIDE] processo 21 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 21 envia mensagem para processo 20
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 21 foi entregue para a aplicacao pelo processo 20 no tempo {76}
+
+[DECIDE] processo 20 decide pelo valor 2 e atualiza seu registrador
+processo 20 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 20 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 24
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 22
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 23 foi entregue para a aplicacao pelo processo 22 no tempo {76}
+
+[DECIDE] processo 22 decide pelo valor 2 e atualiza seu registrador
+processo 22 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 22 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 25
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 27
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 27 no tempo {76}
+
+[DECIDE] processo 27 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 27 envia mensagem para processo 25
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 27 foi entregue para a aplicacao pelo processo 25 no tempo {76}
+
+[DECIDE] processo 25 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 25 envia mensagem para processo 24
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 25 foi entregue para a aplicacao pelo processo 24 no tempo {76}
+
+[DECIDE] processo 24 decide pelo valor 2 e atualiza seu registrador
+processo 24 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 24 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 28
+--------------------------------------
+[RBCAST] processo 27 envia mensagem para processo 26
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 27 foi entregue para a aplicacao pelo processo 26 no tempo {76}
+
+[DECIDE] processo 26 decide pelo valor 2 e atualiza seu registrador
+processo 26 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 26 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 29
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 29
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 29 no tempo {76}
+
+[DECIDE] processo 29 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 29 envia mensagem para processo 28
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 29 foi entregue para a aplicacao pelo processo 28 no tempo {76}
+
+[DECIDE] processo 28 decide pelo valor 2 e atualiza seu registrador
+processo 28 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 28 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 31
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 30
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 30 no tempo {76}
+
+[DECIDE] processo 30 decide pelo valor 2 e atualiza seu registrador
+processo 30 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 30 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 32
+--------------------------------------
 [RBCAST] processo 31 envia mensagem para processo 63
 [DELIVER] accept request com numero "31" e valor "2" recebido do nodo 31 foi entregue para a aplicacao pelo processo 63 no tempo {76}
 
-[DECIDE] processo 63 decide pelo valor 2 e envia o accept response para 31
-O processo 63 atualizou seu registrador
-O processo atualiza o registrador do nodo: 0
-O processo atualiza o registrador do nodo: 1
-O processo atualiza o registrador do nodo: 2
-O processo atualiza o registrador do nodo: 3
-O processo atualiza o registrador do nodo: 4
-O processo atualiza o registrador do nodo: 5
-O processo atualiza o registrador do nodo: 6
-O processo atualiza o registrador do nodo: 7
-O processo atualiza o registrador do nodo: 8
-O processo atualiza o registrador do nodo: 9
-O processo atualiza o registrador do nodo: 10
-O processo atualiza o registrador do nodo: 11
-O processo atualiza o registrador do nodo: 12
-O processo atualiza o registrador do nodo: 13
-O processo atualiza o registrador do nodo: 14
-O processo atualiza o registrador do nodo: 15
-O processo atualiza o registrador do nodo: 16
-O processo atualiza o registrador do nodo: 17
-O processo atualiza o registrador do nodo: 18
-O processo atualiza o registrador do nodo: 19
-O processo atualiza o registrador do nodo: 20
-O processo atualiza o registrador do nodo: 21
-O processo atualiza o registrador do nodo: 22
-O processo atualiza o registrador do nodo: 23
-O processo atualiza o registrador do nodo: 24
-O processo atualiza o registrador do nodo: 25
-O processo atualiza o registrador do nodo: 26
-O processo atualiza o registrador do nodo: 27
-O processo atualiza o registrador do nodo: 28
-O processo atualiza o registrador do nodo: 29
-O processo atualiza o registrador do nodo: 30
-O processo atualiza o registrador do nodo: 31
-O processo atualiza o registrador do nodo: 32
-O processo atualiza o registrador do nodo: 33
-O processo atualiza o registrador do nodo: 34
-O processo atualiza o registrador do nodo: 35
-O processo atualiza o registrador do nodo: 36
-O processo atualiza o registrador do nodo: 37
-O processo atualiza o registrador do nodo: 38
-O processo atualiza o registrador do nodo: 39
-O processo atualiza o registrador do nodo: 40
-O processo atualiza o registrador do nodo: 41
-O processo atualiza o registrador do nodo: 42
-O processo atualiza o registrador do nodo: 43
-O processo atualiza o registrador do nodo: 44
-O processo atualiza o registrador do nodo: 45
-O processo atualiza o registrador do nodo: 46
-O processo atualiza o registrador do nodo: 47
-O processo atualiza o registrador do nodo: 48
-O processo atualiza o registrador do nodo: 49
-O processo atualiza o registrador do nodo: 50
-O processo atualiza o registrador do nodo: 51
-O processo atualiza o registrador do nodo: 52
-O processo atualiza o registrador do nodo: 53
-O processo atualiza o registrador do nodo: 54
-O processo atualiza o registrador do nodo: 55
-O processo atualiza o registrador do nodo: 56
-O processo atualiza o registrador do nodo: 57
-O processo atualiza o registrador do nodo: 58
-O processo atualiza o registrador do nodo: 59
-O processo atualiza o registrador do nodo: 60
-O processo atualiza o registrador do nodo: 61
-O processo atualiza o registrador do nodo: 62
+[DECIDE] processo 63 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 63 envia mensagem para processo 47
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 63 foi entregue para a aplicacao pelo processo 47 no tempo {76}
+
+[DECIDE] processo 47 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 47 envia mensagem para processo 39
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 47 foi entregue para a aplicacao pelo processo 39 no tempo {76}
+
+[DECIDE] processo 39 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 39 envia mensagem para processo 35
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 39 foi entregue para a aplicacao pelo processo 35 no tempo {76}
+
+[DECIDE] processo 35 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 35 envia mensagem para processo 33
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 35 foi entregue para a aplicacao pelo processo 33 no tempo {76}
+
+[DECIDE] processo 33 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 33 envia mensagem para processo 32
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 33 foi entregue para a aplicacao pelo processo 32 no tempo {76}
+
+[DECIDE] processo 32 decide pelo valor 2 e atualiza seu registrador
+processo 32 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 32 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 38
+--------------------------------------
+[RBCAST] processo 35 envia mensagem para processo 34
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 35 foi entregue para a aplicacao pelo processo 34 no tempo {76}
+
+[DECIDE] processo 34 decide pelo valor 2 e atualiza seu registrador
+processo 34 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 34 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 39
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 37
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 39 foi entregue para a aplicacao pelo processo 37 no tempo {76}
+
+[DECIDE] processo 37 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 37 envia mensagem para processo 36
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 37 foi entregue para a aplicacao pelo processo 36 no tempo {76}
+
+[DECIDE] processo 36 decide pelo valor 2 e atualiza seu registrador
+processo 36 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 36 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 41
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 38
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 39 foi entregue para a aplicacao pelo processo 38 no tempo {76}
+
+[DECIDE] processo 38 decide pelo valor 2 e atualiza seu registrador
+processo 38 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 38 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 42
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 43
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 47 foi entregue para a aplicacao pelo processo 43 no tempo {76}
+
+[DECIDE] processo 43 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 43 envia mensagem para processo 41
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 43 foi entregue para a aplicacao pelo processo 41 no tempo {76}
+
+[DECIDE] processo 41 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 41 envia mensagem para processo 40
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 41 foi entregue para a aplicacao pelo processo 40 no tempo {76}
+
+[DECIDE] processo 40 decide pelo valor 2 e atualiza seu registrador
+processo 40 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 40 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 45
+--------------------------------------
+[RBCAST] processo 43 envia mensagem para processo 42
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 43 foi entregue para a aplicacao pelo processo 42 no tempo {76}
+
+[DECIDE] processo 42 decide pelo valor 2 e atualiza seu registrador
+processo 42 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 42 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 46
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 45
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 47 foi entregue para a aplicacao pelo processo 45 no tempo {76}
+
+[DECIDE] processo 45 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 45 envia mensagem para processo 44
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 45 foi entregue para a aplicacao pelo processo 44 no tempo {76}
+
+[DECIDE] processo 44 decide pelo valor 2 e atualiza seu registrador
+processo 44 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 44 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 48
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 46
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 47 foi entregue para a aplicacao pelo processo 46 no tempo {76}
+
+[DECIDE] processo 46 decide pelo valor 2 e atualiza seu registrador
+processo 46 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 46 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 49
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 55
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 63 foi entregue para a aplicacao pelo processo 55 no tempo {76}
+
+[DECIDE] processo 55 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 55 envia mensagem para processo 51
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 55 foi entregue para a aplicacao pelo processo 51 no tempo {76}
+
+[DECIDE] processo 51 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 51 envia mensagem para processo 49
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 51 foi entregue para a aplicacao pelo processo 49 no tempo {76}
+
+[DECIDE] processo 49 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 49 envia mensagem para processo 48
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 49 foi entregue para a aplicacao pelo processo 48 no tempo {76}
+
+[DECIDE] processo 48 decide pelo valor 2 e atualiza seu registrador
+processo 48 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 48 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 53
+--------------------------------------
+[RBCAST] processo 51 envia mensagem para processo 50
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 51 foi entregue para a aplicacao pelo processo 50 no tempo {76}
+
+[DECIDE] processo 50 decide pelo valor 2 e atualiza seu registrador
+processo 50 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 50 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 54
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 53
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 55 foi entregue para a aplicacao pelo processo 53 no tempo {76}
+
+[DECIDE] processo 53 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 53 envia mensagem para processo 52
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 53 foi entregue para a aplicacao pelo processo 52 no tempo {76}
+
+[DECIDE] processo 52 decide pelo valor 2 e atualiza seu registrador
+processo 52 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 52 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 56
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 54
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 55 foi entregue para a aplicacao pelo processo 54 no tempo {76}
+
+[DECIDE] processo 54 decide pelo valor 2 e atualiza seu registrador
+processo 54 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 54 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 57
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 59
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 63 foi entregue para a aplicacao pelo processo 59 no tempo {76}
+
+[DECIDE] processo 59 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 59 envia mensagem para processo 57
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 59 foi entregue para a aplicacao pelo processo 57 no tempo {76}
+
+[DECIDE] processo 57 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 57 envia mensagem para processo 56
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 57 foi entregue para a aplicacao pelo processo 56 no tempo {76}
+
+[DECIDE] processo 56 decide pelo valor 2 e atualiza seu registrador
+processo 56 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 56 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 60
+--------------------------------------
+[RBCAST] processo 59 envia mensagem para processo 58
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 59 foi entregue para a aplicacao pelo processo 58 no tempo {76}
+
+[DECIDE] processo 58 decide pelo valor 2 e atualiza seu registrador
+processo 58 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 58 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 61
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 61
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 63 foi entregue para a aplicacao pelo processo 61 no tempo {76}
+
+[DECIDE] processo 61 decide pelo valor 2 e atualiza seu registrador
+[RBCAST] processo 61 envia mensagem para processo 60
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 61 foi entregue para a aplicacao pelo processo 60 no tempo {76}
+
+[DECIDE] processo 60 decide pelo valor 2 e atualiza seu registrador
+processo 60 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 60 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 63
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 62
+[DELIVER] accept request com numero "31" e valor "2" recebido do nodo 63 foi entregue para a aplicacao pelo processo 62 no tempo {76}
+
+[DECIDE] processo 62 decide pelo valor 2 e atualiza seu registrador
+processo 62 envia para 31 a decisao
+--------------------------------------
+O processo 31 recebeu do processo 62 o accept response (numero 31, valor 2)
+>>> A contagem de accepts esta em: 64
+--------------------------------------
 
 --------------------------------------------------------------
                        RESULTADOS
@@ -264,11 +609,11 @@ Quantidade de prepare request enviados: 32
 
 Quantidade de prepare response recebidos: 16
 
-Quantidade de accept request enviados: 1
+Quantidade de accept request enviados: 63
 
-Quantidade de accept response recebidos: 1
+Quantidade de accept response recebidos: 32
 
-Quantidade total de mensagens enviadas: 50
+Quantidade total de mensagens enviadas: 143
 
 Vetor STATE ao final do diagnostico:
 

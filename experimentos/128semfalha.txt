@@ -364,138 +364,835 @@ O processo 63 recebeu do processo 126 o prepare response (numero 63, valor 0)
 --------------------------------------
 [DELIVER] accept request com numero "63" e valor "127" foi entregue para a aplicacao pelo processo 63
 
+O processo 63 decidiu pelo valor 127 e atualizou seu registrador 
+[RBCAST] processo 63 envia mensagem para processo 31
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 31 no tempo {76}
+
+[DECIDE] processo 31 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 31 envia mensagem para processo 15
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 31 foi entregue para a aplicacao pelo processo 15 no tempo {76}
+
+[DECIDE] processo 15 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 15 envia mensagem para processo 7
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 15 foi entregue para a aplicacao pelo processo 7 no tempo {76}
+
+[DECIDE] processo 7 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 7 envia mensagem para processo 3
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 7 foi entregue para a aplicacao pelo processo 3 no tempo {76}
+
+[DECIDE] processo 3 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 3 envia mensagem para processo 1
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 3 foi entregue para a aplicacao pelo processo 1 no tempo {76}
+
+[DECIDE] processo 1 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 1 envia mensagem para processo 0
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 1 foi entregue para a aplicacao pelo processo 0 no tempo {76}
+
+[DECIDE] processo 0 decide pelo valor 127 e atualiza seu registrador
+processo 0 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 0 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 7
+--------------------------------------
+[RBCAST] processo 3 envia mensagem para processo 2
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 3 foi entregue para a aplicacao pelo processo 2 no tempo {76}
+
+[DECIDE] processo 2 decide pelo valor 127 e atualiza seu registrador
+processo 2 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 2 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 5
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 7 foi entregue para a aplicacao pelo processo 5 no tempo {76}
+
+[DECIDE] processo 5 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 5 envia mensagem para processo 4
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 5 foi entregue para a aplicacao pelo processo 4 no tempo {76}
+
+[DECIDE] processo 4 decide pelo valor 127 e atualiza seu registrador
+processo 4 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 4 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 10
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 6
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 7 foi entregue para a aplicacao pelo processo 6 no tempo {76}
+
+[DECIDE] processo 6 decide pelo valor 127 e atualiza seu registrador
+processo 6 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 6 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 11
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 11
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 15 foi entregue para a aplicacao pelo processo 11 no tempo {76}
+
+[DECIDE] processo 11 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 11 envia mensagem para processo 9
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 11 foi entregue para a aplicacao pelo processo 9 no tempo {76}
+
+[DECIDE] processo 9 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 9 envia mensagem para processo 8
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 9 foi entregue para a aplicacao pelo processo 8 no tempo {76}
+
+[DECIDE] processo 8 decide pelo valor 127 e atualiza seu registrador
+processo 8 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 8 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 14
+--------------------------------------
+[RBCAST] processo 11 envia mensagem para processo 10
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 11 foi entregue para a aplicacao pelo processo 10 no tempo {76}
+
+[DECIDE] processo 10 decide pelo valor 127 e atualiza seu registrador
+processo 10 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 10 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 15
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 13
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 15 foi entregue para a aplicacao pelo processo 13 no tempo {76}
+
+[DECIDE] processo 13 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 13 envia mensagem para processo 12
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 13 foi entregue para a aplicacao pelo processo 12 no tempo {76}
+
+[DECIDE] processo 12 decide pelo valor 127 e atualiza seu registrador
+processo 12 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 12 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 17
+--------------------------------------
+[RBCAST] processo 15 envia mensagem para processo 14
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 15 foi entregue para a aplicacao pelo processo 14 no tempo {76}
+
+[DECIDE] processo 14 decide pelo valor 127 e atualiza seu registrador
+processo 14 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 14 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 18
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 23
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 31 foi entregue para a aplicacao pelo processo 23 no tempo {76}
+
+[DECIDE] processo 23 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 23 envia mensagem para processo 19
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 23 foi entregue para a aplicacao pelo processo 19 no tempo {76}
+
+[DECIDE] processo 19 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 19 envia mensagem para processo 17
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 19 foi entregue para a aplicacao pelo processo 17 no tempo {76}
+
+[DECIDE] processo 17 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 17 envia mensagem para processo 16
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 17 foi entregue para a aplicacao pelo processo 16 no tempo {76}
+
+[DECIDE] processo 16 decide pelo valor 127 e atualiza seu registrador
+processo 16 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 16 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 22
+--------------------------------------
+[RBCAST] processo 19 envia mensagem para processo 18
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 19 foi entregue para a aplicacao pelo processo 18 no tempo {76}
+
+[DECIDE] processo 18 decide pelo valor 127 e atualiza seu registrador
+processo 18 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 18 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 23
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 21
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 23 foi entregue para a aplicacao pelo processo 21 no tempo {76}
+
+[DECIDE] processo 21 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 21 envia mensagem para processo 20
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 21 foi entregue para a aplicacao pelo processo 20 no tempo {76}
+
+[DECIDE] processo 20 decide pelo valor 127 e atualiza seu registrador
+processo 20 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 20 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 25
+--------------------------------------
+[RBCAST] processo 23 envia mensagem para processo 22
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 23 foi entregue para a aplicacao pelo processo 22 no tempo {76}
+
+[DECIDE] processo 22 decide pelo valor 127 e atualiza seu registrador
+processo 22 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 22 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 26
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 27
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 31 foi entregue para a aplicacao pelo processo 27 no tempo {76}
+
+[DECIDE] processo 27 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 27 envia mensagem para processo 25
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 27 foi entregue para a aplicacao pelo processo 25 no tempo {76}
+
+[DECIDE] processo 25 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 25 envia mensagem para processo 24
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 25 foi entregue para a aplicacao pelo processo 24 no tempo {76}
+
+[DECIDE] processo 24 decide pelo valor 127 e atualiza seu registrador
+processo 24 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 24 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 29
+--------------------------------------
+[RBCAST] processo 27 envia mensagem para processo 26
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 27 foi entregue para a aplicacao pelo processo 26 no tempo {76}
+
+[DECIDE] processo 26 decide pelo valor 127 e atualiza seu registrador
+processo 26 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 26 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 30
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 29
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 31 foi entregue para a aplicacao pelo processo 29 no tempo {76}
+
+[DECIDE] processo 29 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 29 envia mensagem para processo 28
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 29 foi entregue para a aplicacao pelo processo 28 no tempo {76}
+
+[DECIDE] processo 28 decide pelo valor 127 e atualiza seu registrador
+processo 28 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 28 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 32
+--------------------------------------
+[RBCAST] processo 31 envia mensagem para processo 30
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 31 foi entregue para a aplicacao pelo processo 30 no tempo {76}
+
+[DECIDE] processo 30 decide pelo valor 127 e atualiza seu registrador
+processo 30 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 30 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 33
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 47
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 47 no tempo {76}
+
+[DECIDE] processo 47 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 47 envia mensagem para processo 39
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 47 foi entregue para a aplicacao pelo processo 39 no tempo {76}
+
+[DECIDE] processo 39 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 39 envia mensagem para processo 35
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 39 foi entregue para a aplicacao pelo processo 35 no tempo {76}
+
+[DECIDE] processo 35 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 35 envia mensagem para processo 33
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 35 foi entregue para a aplicacao pelo processo 33 no tempo {76}
+
+[DECIDE] processo 33 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 33 envia mensagem para processo 32
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 33 foi entregue para a aplicacao pelo processo 32 no tempo {76}
+
+[DECIDE] processo 32 decide pelo valor 127 e atualiza seu registrador
+processo 32 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 32 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 38
+--------------------------------------
+[RBCAST] processo 35 envia mensagem para processo 34
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 35 foi entregue para a aplicacao pelo processo 34 no tempo {76}
+
+[DECIDE] processo 34 decide pelo valor 127 e atualiza seu registrador
+processo 34 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 34 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 39
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 37
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 39 foi entregue para a aplicacao pelo processo 37 no tempo {76}
+
+[DECIDE] processo 37 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 37 envia mensagem para processo 36
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 37 foi entregue para a aplicacao pelo processo 36 no tempo {76}
+
+[DECIDE] processo 36 decide pelo valor 127 e atualiza seu registrador
+processo 36 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 36 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 41
+--------------------------------------
+[RBCAST] processo 39 envia mensagem para processo 38
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 39 foi entregue para a aplicacao pelo processo 38 no tempo {76}
+
+[DECIDE] processo 38 decide pelo valor 127 e atualiza seu registrador
+processo 38 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 38 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 42
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 43
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 47 foi entregue para a aplicacao pelo processo 43 no tempo {76}
+
+[DECIDE] processo 43 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 43 envia mensagem para processo 41
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 43 foi entregue para a aplicacao pelo processo 41 no tempo {76}
+
+[DECIDE] processo 41 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 41 envia mensagem para processo 40
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 41 foi entregue para a aplicacao pelo processo 40 no tempo {76}
+
+[DECIDE] processo 40 decide pelo valor 127 e atualiza seu registrador
+processo 40 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 40 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 45
+--------------------------------------
+[RBCAST] processo 43 envia mensagem para processo 42
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 43 foi entregue para a aplicacao pelo processo 42 no tempo {76}
+
+[DECIDE] processo 42 decide pelo valor 127 e atualiza seu registrador
+processo 42 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 42 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 46
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 45
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 47 foi entregue para a aplicacao pelo processo 45 no tempo {76}
+
+[DECIDE] processo 45 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 45 envia mensagem para processo 44
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 45 foi entregue para a aplicacao pelo processo 44 no tempo {76}
+
+[DECIDE] processo 44 decide pelo valor 127 e atualiza seu registrador
+processo 44 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 44 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 48
+--------------------------------------
+[RBCAST] processo 47 envia mensagem para processo 46
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 47 foi entregue para a aplicacao pelo processo 46 no tempo {76}
+
+[DECIDE] processo 46 decide pelo valor 127 e atualiza seu registrador
+processo 46 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 46 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 49
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 55
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 55 no tempo {76}
+
+[DECIDE] processo 55 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 55 envia mensagem para processo 51
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 55 foi entregue para a aplicacao pelo processo 51 no tempo {76}
+
+[DECIDE] processo 51 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 51 envia mensagem para processo 49
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 51 foi entregue para a aplicacao pelo processo 49 no tempo {76}
+
+[DECIDE] processo 49 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 49 envia mensagem para processo 48
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 49 foi entregue para a aplicacao pelo processo 48 no tempo {76}
+
+[DECIDE] processo 48 decide pelo valor 127 e atualiza seu registrador
+processo 48 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 48 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 53
+--------------------------------------
+[RBCAST] processo 51 envia mensagem para processo 50
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 51 foi entregue para a aplicacao pelo processo 50 no tempo {76}
+
+[DECIDE] processo 50 decide pelo valor 127 e atualiza seu registrador
+processo 50 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 50 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 54
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 53
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 55 foi entregue para a aplicacao pelo processo 53 no tempo {76}
+
+[DECIDE] processo 53 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 53 envia mensagem para processo 52
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 53 foi entregue para a aplicacao pelo processo 52 no tempo {76}
+
+[DECIDE] processo 52 decide pelo valor 127 e atualiza seu registrador
+processo 52 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 52 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 56
+--------------------------------------
+[RBCAST] processo 55 envia mensagem para processo 54
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 55 foi entregue para a aplicacao pelo processo 54 no tempo {76}
+
+[DECIDE] processo 54 decide pelo valor 127 e atualiza seu registrador
+processo 54 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 54 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 57
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 59
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 59 no tempo {76}
+
+[DECIDE] processo 59 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 59 envia mensagem para processo 57
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 59 foi entregue para a aplicacao pelo processo 57 no tempo {76}
+
+[DECIDE] processo 57 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 57 envia mensagem para processo 56
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 57 foi entregue para a aplicacao pelo processo 56 no tempo {76}
+
+[DECIDE] processo 56 decide pelo valor 127 e atualiza seu registrador
+processo 56 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 56 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 60
+--------------------------------------
+[RBCAST] processo 59 envia mensagem para processo 58
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 59 foi entregue para a aplicacao pelo processo 58 no tempo {76}
+
+[DECIDE] processo 58 decide pelo valor 127 e atualiza seu registrador
+processo 58 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 58 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 61
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 61
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 61 no tempo {76}
+
+[DECIDE] processo 61 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 61 envia mensagem para processo 60
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 61 foi entregue para a aplicacao pelo processo 60 no tempo {76}
+
+[DECIDE] processo 60 decide pelo valor 127 e atualiza seu registrador
+processo 60 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 60 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 63
+--------------------------------------
+[RBCAST] processo 63 envia mensagem para processo 62
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 62 no tempo {76}
+
+[DECIDE] processo 62 decide pelo valor 127 e atualiza seu registrador
+processo 62 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 62 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 64
+--------------------------------------
 [RBCAST] processo 63 envia mensagem para processo 127
 [DELIVER] accept request com numero "63" e valor "127" recebido do nodo 63 foi entregue para a aplicacao pelo processo 127 no tempo {76}
 
-[DECIDE] processo 127 decide pelo valor 127 e envia o accept response para 63
-O processo 127 atualizou seu registrador
-O processo atualiza o registrador do nodo: 0
-O processo atualiza o registrador do nodo: 1
-O processo atualiza o registrador do nodo: 2
-O processo atualiza o registrador do nodo: 3
-O processo atualiza o registrador do nodo: 4
-O processo atualiza o registrador do nodo: 5
-O processo atualiza o registrador do nodo: 6
-O processo atualiza o registrador do nodo: 7
-O processo atualiza o registrador do nodo: 8
-O processo atualiza o registrador do nodo: 9
-O processo atualiza o registrador do nodo: 10
-O processo atualiza o registrador do nodo: 11
-O processo atualiza o registrador do nodo: 12
-O processo atualiza o registrador do nodo: 13
-O processo atualiza o registrador do nodo: 14
-O processo atualiza o registrador do nodo: 15
-O processo atualiza o registrador do nodo: 16
-O processo atualiza o registrador do nodo: 17
-O processo atualiza o registrador do nodo: 18
-O processo atualiza o registrador do nodo: 19
-O processo atualiza o registrador do nodo: 20
-O processo atualiza o registrador do nodo: 21
-O processo atualiza o registrador do nodo: 22
-O processo atualiza o registrador do nodo: 23
-O processo atualiza o registrador do nodo: 24
-O processo atualiza o registrador do nodo: 25
-O processo atualiza o registrador do nodo: 26
-O processo atualiza o registrador do nodo: 27
-O processo atualiza o registrador do nodo: 28
-O processo atualiza o registrador do nodo: 29
-O processo atualiza o registrador do nodo: 30
-O processo atualiza o registrador do nodo: 31
-O processo atualiza o registrador do nodo: 32
-O processo atualiza o registrador do nodo: 33
-O processo atualiza o registrador do nodo: 34
-O processo atualiza o registrador do nodo: 35
-O processo atualiza o registrador do nodo: 36
-O processo atualiza o registrador do nodo: 37
-O processo atualiza o registrador do nodo: 38
-O processo atualiza o registrador do nodo: 39
-O processo atualiza o registrador do nodo: 40
-O processo atualiza o registrador do nodo: 41
-O processo atualiza o registrador do nodo: 42
-O processo atualiza o registrador do nodo: 43
-O processo atualiza o registrador do nodo: 44
-O processo atualiza o registrador do nodo: 45
-O processo atualiza o registrador do nodo: 46
-O processo atualiza o registrador do nodo: 47
-O processo atualiza o registrador do nodo: 48
-O processo atualiza o registrador do nodo: 49
-O processo atualiza o registrador do nodo: 50
-O processo atualiza o registrador do nodo: 51
-O processo atualiza o registrador do nodo: 52
-O processo atualiza o registrador do nodo: 53
-O processo atualiza o registrador do nodo: 54
-O processo atualiza o registrador do nodo: 55
-O processo atualiza o registrador do nodo: 56
-O processo atualiza o registrador do nodo: 57
-O processo atualiza o registrador do nodo: 58
-O processo atualiza o registrador do nodo: 59
-O processo atualiza o registrador do nodo: 60
-O processo atualiza o registrador do nodo: 61
-O processo atualiza o registrador do nodo: 62
-O processo atualiza o registrador do nodo: 63
-O processo atualiza o registrador do nodo: 64
-O processo atualiza o registrador do nodo: 65
-O processo atualiza o registrador do nodo: 66
-O processo atualiza o registrador do nodo: 67
-O processo atualiza o registrador do nodo: 68
-O processo atualiza o registrador do nodo: 69
-O processo atualiza o registrador do nodo: 70
-O processo atualiza o registrador do nodo: 71
-O processo atualiza o registrador do nodo: 72
-O processo atualiza o registrador do nodo: 73
-O processo atualiza o registrador do nodo: 74
-O processo atualiza o registrador do nodo: 75
-O processo atualiza o registrador do nodo: 76
-O processo atualiza o registrador do nodo: 77
-O processo atualiza o registrador do nodo: 78
-O processo atualiza o registrador do nodo: 79
-O processo atualiza o registrador do nodo: 80
-O processo atualiza o registrador do nodo: 81
-O processo atualiza o registrador do nodo: 82
-O processo atualiza o registrador do nodo: 83
-O processo atualiza o registrador do nodo: 84
-O processo atualiza o registrador do nodo: 85
-O processo atualiza o registrador do nodo: 86
-O processo atualiza o registrador do nodo: 87
-O processo atualiza o registrador do nodo: 88
-O processo atualiza o registrador do nodo: 89
-O processo atualiza o registrador do nodo: 90
-O processo atualiza o registrador do nodo: 91
-O processo atualiza o registrador do nodo: 92
-O processo atualiza o registrador do nodo: 93
-O processo atualiza o registrador do nodo: 94
-O processo atualiza o registrador do nodo: 95
-O processo atualiza o registrador do nodo: 96
-O processo atualiza o registrador do nodo: 97
-O processo atualiza o registrador do nodo: 98
-O processo atualiza o registrador do nodo: 99
-O processo atualiza o registrador do nodo: 100
-O processo atualiza o registrador do nodo: 101
-O processo atualiza o registrador do nodo: 102
-O processo atualiza o registrador do nodo: 103
-O processo atualiza o registrador do nodo: 104
-O processo atualiza o registrador do nodo: 105
-O processo atualiza o registrador do nodo: 106
-O processo atualiza o registrador do nodo: 107
-O processo atualiza o registrador do nodo: 108
-O processo atualiza o registrador do nodo: 109
-O processo atualiza o registrador do nodo: 110
-O processo atualiza o registrador do nodo: 111
-O processo atualiza o registrador do nodo: 112
-O processo atualiza o registrador do nodo: 113
-O processo atualiza o registrador do nodo: 114
-O processo atualiza o registrador do nodo: 115
-O processo atualiza o registrador do nodo: 116
-O processo atualiza o registrador do nodo: 117
-O processo atualiza o registrador do nodo: 118
-O processo atualiza o registrador do nodo: 119
-O processo atualiza o registrador do nodo: 120
-O processo atualiza o registrador do nodo: 121
-O processo atualiza o registrador do nodo: 122
-O processo atualiza o registrador do nodo: 123
-O processo atualiza o registrador do nodo: 124
-O processo atualiza o registrador do nodo: 125
-O processo atualiza o registrador do nodo: 126
+[DECIDE] processo 127 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 127 envia mensagem para processo 95
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 95 no tempo {76}
+
+[DECIDE] processo 95 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 95 envia mensagem para processo 79
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 95 foi entregue para a aplicacao pelo processo 79 no tempo {76}
+
+[DECIDE] processo 79 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 79 envia mensagem para processo 71
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 79 foi entregue para a aplicacao pelo processo 71 no tempo {76}
+
+[DECIDE] processo 71 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 71 envia mensagem para processo 67
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 71 foi entregue para a aplicacao pelo processo 67 no tempo {76}
+
+[DECIDE] processo 67 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 67 envia mensagem para processo 65
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 67 foi entregue para a aplicacao pelo processo 65 no tempo {76}
+
+[DECIDE] processo 65 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 65 envia mensagem para processo 64
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 65 foi entregue para a aplicacao pelo processo 64 no tempo {76}
+
+[DECIDE] processo 64 decide pelo valor 127 e atualiza seu registrador
+processo 64 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 64 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 71
+--------------------------------------
+[RBCAST] processo 67 envia mensagem para processo 66
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 67 foi entregue para a aplicacao pelo processo 66 no tempo {76}
+
+[DECIDE] processo 66 decide pelo valor 127 e atualiza seu registrador
+processo 66 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 66 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 72
+--------------------------------------
+[RBCAST] processo 71 envia mensagem para processo 69
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 71 foi entregue para a aplicacao pelo processo 69 no tempo {76}
+
+[DECIDE] processo 69 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 69 envia mensagem para processo 68
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 69 foi entregue para a aplicacao pelo processo 68 no tempo {76}
+
+[DECIDE] processo 68 decide pelo valor 127 e atualiza seu registrador
+processo 68 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 68 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 74
+--------------------------------------
+[RBCAST] processo 71 envia mensagem para processo 70
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 71 foi entregue para a aplicacao pelo processo 70 no tempo {76}
+
+[DECIDE] processo 70 decide pelo valor 127 e atualiza seu registrador
+processo 70 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 70 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 75
+--------------------------------------
+[RBCAST] processo 79 envia mensagem para processo 75
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 79 foi entregue para a aplicacao pelo processo 75 no tempo {76}
+
+[DECIDE] processo 75 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 75 envia mensagem para processo 73
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 75 foi entregue para a aplicacao pelo processo 73 no tempo {76}
+
+[DECIDE] processo 73 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 73 envia mensagem para processo 72
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 73 foi entregue para a aplicacao pelo processo 72 no tempo {76}
+
+[DECIDE] processo 72 decide pelo valor 127 e atualiza seu registrador
+processo 72 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 72 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 78
+--------------------------------------
+[RBCAST] processo 75 envia mensagem para processo 74
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 75 foi entregue para a aplicacao pelo processo 74 no tempo {76}
+
+[DECIDE] processo 74 decide pelo valor 127 e atualiza seu registrador
+processo 74 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 74 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 79
+--------------------------------------
+[RBCAST] processo 79 envia mensagem para processo 77
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 79 foi entregue para a aplicacao pelo processo 77 no tempo {76}
+
+[DECIDE] processo 77 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 77 envia mensagem para processo 76
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 77 foi entregue para a aplicacao pelo processo 76 no tempo {76}
+
+[DECIDE] processo 76 decide pelo valor 127 e atualiza seu registrador
+processo 76 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 76 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 81
+--------------------------------------
+[RBCAST] processo 79 envia mensagem para processo 78
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 79 foi entregue para a aplicacao pelo processo 78 no tempo {76}
+
+[DECIDE] processo 78 decide pelo valor 127 e atualiza seu registrador
+processo 78 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 78 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 82
+--------------------------------------
+[RBCAST] processo 95 envia mensagem para processo 87
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 95 foi entregue para a aplicacao pelo processo 87 no tempo {76}
+
+[DECIDE] processo 87 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 87 envia mensagem para processo 83
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 87 foi entregue para a aplicacao pelo processo 83 no tempo {76}
+
+[DECIDE] processo 83 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 83 envia mensagem para processo 81
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 83 foi entregue para a aplicacao pelo processo 81 no tempo {76}
+
+[DECIDE] processo 81 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 81 envia mensagem para processo 80
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 81 foi entregue para a aplicacao pelo processo 80 no tempo {76}
+
+[DECIDE] processo 80 decide pelo valor 127 e atualiza seu registrador
+processo 80 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 80 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 86
+--------------------------------------
+[RBCAST] processo 83 envia mensagem para processo 82
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 83 foi entregue para a aplicacao pelo processo 82 no tempo {76}
+
+[DECIDE] processo 82 decide pelo valor 127 e atualiza seu registrador
+processo 82 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 82 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 87
+--------------------------------------
+[RBCAST] processo 87 envia mensagem para processo 85
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 87 foi entregue para a aplicacao pelo processo 85 no tempo {76}
+
+[DECIDE] processo 85 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 85 envia mensagem para processo 84
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 85 foi entregue para a aplicacao pelo processo 84 no tempo {76}
+
+[DECIDE] processo 84 decide pelo valor 127 e atualiza seu registrador
+processo 84 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 84 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 89
+--------------------------------------
+[RBCAST] processo 87 envia mensagem para processo 86
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 87 foi entregue para a aplicacao pelo processo 86 no tempo {76}
+
+[DECIDE] processo 86 decide pelo valor 127 e atualiza seu registrador
+processo 86 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 86 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 90
+--------------------------------------
+[RBCAST] processo 95 envia mensagem para processo 91
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 95 foi entregue para a aplicacao pelo processo 91 no tempo {76}
+
+[DECIDE] processo 91 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 91 envia mensagem para processo 89
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 91 foi entregue para a aplicacao pelo processo 89 no tempo {76}
+
+[DECIDE] processo 89 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 89 envia mensagem para processo 88
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 89 foi entregue para a aplicacao pelo processo 88 no tempo {76}
+
+[DECIDE] processo 88 decide pelo valor 127 e atualiza seu registrador
+processo 88 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 88 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 93
+--------------------------------------
+[RBCAST] processo 91 envia mensagem para processo 90
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 91 foi entregue para a aplicacao pelo processo 90 no tempo {76}
+
+[DECIDE] processo 90 decide pelo valor 127 e atualiza seu registrador
+processo 90 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 90 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 94
+--------------------------------------
+[RBCAST] processo 95 envia mensagem para processo 93
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 95 foi entregue para a aplicacao pelo processo 93 no tempo {76}
+
+[DECIDE] processo 93 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 93 envia mensagem para processo 92
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 93 foi entregue para a aplicacao pelo processo 92 no tempo {76}
+
+[DECIDE] processo 92 decide pelo valor 127 e atualiza seu registrador
+processo 92 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 92 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 96
+--------------------------------------
+[RBCAST] processo 95 envia mensagem para processo 94
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 95 foi entregue para a aplicacao pelo processo 94 no tempo {76}
+
+[DECIDE] processo 94 decide pelo valor 127 e atualiza seu registrador
+processo 94 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 94 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 97
+--------------------------------------
+[RBCAST] processo 127 envia mensagem para processo 111
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 111 no tempo {76}
+
+[DECIDE] processo 111 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 111 envia mensagem para processo 103
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 111 foi entregue para a aplicacao pelo processo 103 no tempo {76}
+
+[DECIDE] processo 103 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 103 envia mensagem para processo 99
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 103 foi entregue para a aplicacao pelo processo 99 no tempo {76}
+
+[DECIDE] processo 99 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 99 envia mensagem para processo 97
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 99 foi entregue para a aplicacao pelo processo 97 no tempo {76}
+
+[DECIDE] processo 97 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 97 envia mensagem para processo 96
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 97 foi entregue para a aplicacao pelo processo 96 no tempo {76}
+
+[DECIDE] processo 96 decide pelo valor 127 e atualiza seu registrador
+processo 96 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 96 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 102
+--------------------------------------
+[RBCAST] processo 99 envia mensagem para processo 98
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 99 foi entregue para a aplicacao pelo processo 98 no tempo {76}
+
+[DECIDE] processo 98 decide pelo valor 127 e atualiza seu registrador
+processo 98 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 98 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 103
+--------------------------------------
+[RBCAST] processo 103 envia mensagem para processo 101
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 103 foi entregue para a aplicacao pelo processo 101 no tempo {76}
+
+[DECIDE] processo 101 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 101 envia mensagem para processo 100
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 101 foi entregue para a aplicacao pelo processo 100 no tempo {76}
+
+[DECIDE] processo 100 decide pelo valor 127 e atualiza seu registrador
+processo 100 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 100 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 105
+--------------------------------------
+[RBCAST] processo 103 envia mensagem para processo 102
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 103 foi entregue para a aplicacao pelo processo 102 no tempo {76}
+
+[DECIDE] processo 102 decide pelo valor 127 e atualiza seu registrador
+processo 102 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 102 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 106
+--------------------------------------
+[RBCAST] processo 111 envia mensagem para processo 107
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 111 foi entregue para a aplicacao pelo processo 107 no tempo {76}
+
+[DECIDE] processo 107 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 107 envia mensagem para processo 105
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 107 foi entregue para a aplicacao pelo processo 105 no tempo {76}
+
+[DECIDE] processo 105 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 105 envia mensagem para processo 104
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 105 foi entregue para a aplicacao pelo processo 104 no tempo {76}
+
+[DECIDE] processo 104 decide pelo valor 127 e atualiza seu registrador
+processo 104 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 104 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 109
+--------------------------------------
+[RBCAST] processo 107 envia mensagem para processo 106
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 107 foi entregue para a aplicacao pelo processo 106 no tempo {76}
+
+[DECIDE] processo 106 decide pelo valor 127 e atualiza seu registrador
+processo 106 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 106 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 110
+--------------------------------------
+[RBCAST] processo 111 envia mensagem para processo 109
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 111 foi entregue para a aplicacao pelo processo 109 no tempo {76}
+
+[DECIDE] processo 109 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 109 envia mensagem para processo 108
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 109 foi entregue para a aplicacao pelo processo 108 no tempo {76}
+
+[DECIDE] processo 108 decide pelo valor 127 e atualiza seu registrador
+processo 108 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 108 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 112
+--------------------------------------
+[RBCAST] processo 111 envia mensagem para processo 110
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 111 foi entregue para a aplicacao pelo processo 110 no tempo {76}
+
+[DECIDE] processo 110 decide pelo valor 127 e atualiza seu registrador
+processo 110 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 110 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 113
+--------------------------------------
+[RBCAST] processo 127 envia mensagem para processo 119
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 119 no tempo {76}
+
+[DECIDE] processo 119 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 119 envia mensagem para processo 115
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 119 foi entregue para a aplicacao pelo processo 115 no tempo {76}
+
+[DECIDE] processo 115 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 115 envia mensagem para processo 113
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 115 foi entregue para a aplicacao pelo processo 113 no tempo {76}
+
+[DECIDE] processo 113 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 113 envia mensagem para processo 112
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 113 foi entregue para a aplicacao pelo processo 112 no tempo {76}
+
+[DECIDE] processo 112 decide pelo valor 127 e atualiza seu registrador
+processo 112 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 112 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 117
+--------------------------------------
+[RBCAST] processo 115 envia mensagem para processo 114
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 115 foi entregue para a aplicacao pelo processo 114 no tempo {76}
+
+[DECIDE] processo 114 decide pelo valor 127 e atualiza seu registrador
+processo 114 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 114 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 118
+--------------------------------------
+[RBCAST] processo 119 envia mensagem para processo 117
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 119 foi entregue para a aplicacao pelo processo 117 no tempo {76}
+
+[DECIDE] processo 117 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 117 envia mensagem para processo 116
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 117 foi entregue para a aplicacao pelo processo 116 no tempo {76}
+
+[DECIDE] processo 116 decide pelo valor 127 e atualiza seu registrador
+processo 116 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 116 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 120
+--------------------------------------
+[RBCAST] processo 119 envia mensagem para processo 118
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 119 foi entregue para a aplicacao pelo processo 118 no tempo {76}
+
+[DECIDE] processo 118 decide pelo valor 127 e atualiza seu registrador
+processo 118 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 118 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 121
+--------------------------------------
+[RBCAST] processo 127 envia mensagem para processo 123
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 123 no tempo {76}
+
+[DECIDE] processo 123 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 123 envia mensagem para processo 121
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 123 foi entregue para a aplicacao pelo processo 121 no tempo {76}
+
+[DECIDE] processo 121 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 121 envia mensagem para processo 120
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 121 foi entregue para a aplicacao pelo processo 120 no tempo {76}
+
+[DECIDE] processo 120 decide pelo valor 127 e atualiza seu registrador
+processo 120 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 120 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 124
+--------------------------------------
+[RBCAST] processo 123 envia mensagem para processo 122
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 123 foi entregue para a aplicacao pelo processo 122 no tempo {76}
+
+[DECIDE] processo 122 decide pelo valor 127 e atualiza seu registrador
+processo 122 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 122 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 125
+--------------------------------------
+[RBCAST] processo 127 envia mensagem para processo 125
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 125 no tempo {76}
+
+[DECIDE] processo 125 decide pelo valor 127 e atualiza seu registrador
+[RBCAST] processo 125 envia mensagem para processo 124
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 125 foi entregue para a aplicacao pelo processo 124 no tempo {76}
+
+[DECIDE] processo 124 decide pelo valor 127 e atualiza seu registrador
+processo 124 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 124 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 127
+--------------------------------------
+[RBCAST] processo 127 envia mensagem para processo 126
+[DELIVER] accept request com numero "63" e valor "127" recebido do nodo 127 foi entregue para a aplicacao pelo processo 126 no tempo {76}
+
+[DECIDE] processo 126 decide pelo valor 127 e atualiza seu registrador
+processo 126 envia para 63 a decisao
+--------------------------------------
+O processo 63 recebeu do processo 126 o accept response (numero 63, valor 127)
+>>> A contagem de accepts esta em: 128
+--------------------------------------
 
 --------------------------------------------------------------
                        RESULTADOS
@@ -504,11 +1201,11 @@ Quantidade de prepare request enviados: 64
 
 Quantidade de prepare response recebidos: 32
 
-Quantidade de accept request enviados: 1
+Quantidade de accept request enviados: 127
 
-Quantidade de accept response recebidos: 1
+Quantidade de accept response recebidos: 64
 
-Quantidade total de mensagens enviadas: 98
+Quantidade total de mensagens enviadas: 287
 
 Vetor STATE ao final do diagnostico:
 

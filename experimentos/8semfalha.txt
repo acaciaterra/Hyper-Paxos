@@ -34,18 +34,55 @@ O processo 3 recebeu do processo 6 o prepare response (numero 3, valor 0)
 --------------------------------------
 [DELIVER] accept request com numero "3" e valor "115" foi entregue para a aplicacao pelo processo 3
 
+O processo 3 decidiu pelo valor 115 e atualizou seu registrador 
+[RBCAST] processo 3 envia mensagem para processo 1
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 3 foi entregue para a aplicacao pelo processo 1 no tempo {76}
+
+[DECIDE] processo 1 decide pelo valor 115 e atualiza seu registrador
+[RBCAST] processo 1 envia mensagem para processo 0
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 1 foi entregue para a aplicacao pelo processo 0 no tempo {76}
+
+[DECIDE] processo 0 decide pelo valor 115 e atualiza seu registrador
+processo 0 envia para 3 a decisao
+--------------------------------------
+O processo 3 recebeu do processo 0 o accept response (numero 3, valor 115)
+>>> A contagem de accepts esta em: 3
+--------------------------------------
+[RBCAST] processo 3 envia mensagem para processo 2
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 3 foi entregue para a aplicacao pelo processo 2 no tempo {76}
+
+[DECIDE] processo 2 decide pelo valor 115 e atualiza seu registrador
+processo 2 envia para 3 a decisao
+--------------------------------------
+O processo 3 recebeu do processo 2 o accept response (numero 3, valor 115)
+>>> A contagem de accepts esta em: 4
+--------------------------------------
 [RBCAST] processo 3 envia mensagem para processo 7
 [DELIVER] accept request com numero "3" e valor "115" recebido do nodo 3 foi entregue para a aplicacao pelo processo 7 no tempo {76}
 
-[DECIDE] processo 7 decide pelo valor 115 e envia o accept response para 3
-O processo 7 atualizou seu registrador
-O processo atualiza o registrador do nodo: 0
-O processo atualiza o registrador do nodo: 1
-O processo atualiza o registrador do nodo: 2
-O processo atualiza o registrador do nodo: 3
-O processo atualiza o registrador do nodo: 4
-O processo atualiza o registrador do nodo: 5
-O processo atualiza o registrador do nodo: 6
+[DECIDE] processo 7 decide pelo valor 115 e atualiza seu registrador
+[RBCAST] processo 7 envia mensagem para processo 5
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 7 foi entregue para a aplicacao pelo processo 5 no tempo {76}
+
+[DECIDE] processo 5 decide pelo valor 115 e atualiza seu registrador
+[RBCAST] processo 5 envia mensagem para processo 4
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 5 foi entregue para a aplicacao pelo processo 4 no tempo {76}
+
+[DECIDE] processo 4 decide pelo valor 115 e atualiza seu registrador
+processo 4 envia para 3 a decisao
+--------------------------------------
+O processo 3 recebeu do processo 4 o accept response (numero 3, valor 115)
+>>> A contagem de accepts esta em: 7
+--------------------------------------
+[RBCAST] processo 7 envia mensagem para processo 6
+[DELIVER] accept request com numero "3" e valor "115" recebido do nodo 7 foi entregue para a aplicacao pelo processo 6 no tempo {76}
+
+[DECIDE] processo 6 decide pelo valor 115 e atualiza seu registrador
+processo 6 envia para 3 a decisao
+--------------------------------------
+O processo 3 recebeu do processo 6 o accept response (numero 3, valor 115)
+>>> A contagem de accepts esta em: 8
+--------------------------------------
 
 --------------------------------------------------------------
                        RESULTADOS
@@ -54,11 +91,11 @@ Quantidade de prepare request enviados: 4
 
 Quantidade de prepare response recebidos: 2
 
-Quantidade de accept request enviados: 1
+Quantidade de accept request enviados: 7
 
-Quantidade de accept response recebidos: 1
+Quantidade de accept response recebidos: 4
 
-Quantidade total de mensagens enviadas: 8
+Quantidade total de mensagens enviadas: 17
 
 Vetor STATE ao final do diagnostico:
 
