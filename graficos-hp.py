@@ -13,15 +13,15 @@ plt.rcParams['font.serif'] = ['Times New Roman'] + plt.rcParams['font.serif']
 
 labels = ['8', '16', '32', '64', '128']
 
-# sem falhas
-# hyper_results = [17, 35, 71, 143, 287]
-# ring_results = [22, 46, 94, 190, 382]
-# paxos_results = [28, 60, 124, 252, 508]
+# sem falhas - versão sbrc! para versão local verificar experimentos
+hyper_results = [12, 24, 48, 96, 192]
+ring_results = [29, 61, 125, 253, 509]
 
-# # com falhas
-hyper_results = [14, 26, 50, 98, 194]
-ring_results = [16, 32, 64, 128, 256]
-paxos_results = [19, 39, 79, 159, 319]
+
+# # com falhas 
+# hyper_results = [14, 26, 50, 98, 194]
+# ring_results = [20, 40, 80, 160, 320]
+
 
 x = np.arange(len(labels))  # the label locations
 width = 0.35  # the width of the bars
@@ -40,7 +40,7 @@ rects3 = [x + barWidth for x  in rects2]
 
 plt.bar(rects1, hyper_results, width=barWidth, label='Paxos sobre VCube')
 plt.bar(rects2, ring_results, width=barWidth, label='RingPaxos')
-plt.bar(rects3, paxos_results, width=barWidth, label='Paxos')
+# plt.bar(rects3, paxos_results, width=barWidth, label='Paxos')
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Quantidade total de mensagens trocadas')
